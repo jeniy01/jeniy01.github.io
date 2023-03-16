@@ -10,17 +10,43 @@
     <meta name="description" content="롯데글로벌로지스 홈페이지에 방문하신 것을 환영합니다.">
     <meta name="author" content="by. jeniy01">
 
-    <link re1="shortcut icon" href="파비콘 이미지 링크/favicon.ico">
+    <link re1="shortcut icon" href="파비콘 이미지 링크../images/favicon.ico">
 
     <meta name="og:site_name" content="롯데글로벌로지스">
     <meta name="og:title" content="포트폴리오 - 롯데글로벌로지스">
     <meta name="og:description" content="롯데글로벌로지스 홈페이지에 방문하신 것을 환영합니다.">
     <meta name="og:url" content="https://jeniy01.github.io/web1">
-    <meta name="og:image" content="썸네일 이미지 링크/sumnail.jpg">
+    <meta name="og:image" content="썸네일이미지링크../images/thumbnail.jpg">
 
+    <!-- 기본 폰트 및 초기화 로딩 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- 스타일 초기화 -->
+    <!-- reset.css나 normalize.css를 CDN 또는 다운로드 받아 link로 붙여넣기-->
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+    <style>
+    /*
+    웹 폰트 : 구글 웹폰트 또는 눈누, 응용 프로그램용 폰트(연결이 아닌 설치) : 다폰트
+    {font-family:"1차폰트명",2차폰트명(공백 포함 시 "" 붙이기),3차폰트명;}
+    3차 폰트는 기본 폰트(브라우저에서 기본적으로 제공하는 폰트)를 적용함
+    sans-serif(고딕), serif(명조), cursive(궁서), monospace(가로세로 비율 1:1폰트), fantasy(심볼기호)
+    */
+    * {margin: 0; padding: 0;} /*boder기준 테두리의 바깥여백, 안여백
+                            margin:10px; 상우하좌 모두 10px, margin:10px 20px; 상하 10px 좌우 20px
+                            크기가 400px 박스를 좌우 가운데로 배치 : width:400px(크기지정) margin:10px(임의) auto;
+                            세부속성(padding도 동일) : margin-top, margin-bottom, margin-left, margin-right(상하좌우를 각각 개별적으로 지정)
+                            통합속성과 세부속성을 같이 쓸 땐 통합속성 먼저 지정하고 세부속성을 나중에 지정해야 함*/
+    body {font-family: 'Noto Sans KR', sans-serif;} /*인라인 방식 태그(a, span, input)은 width, height 적용 안됨*/
+    ul {list-style: none;}
+    a {text-decoration: none;}
+    img {border: none;}
+
+    .box {margin: 10px; margin-top: 30px;}
+    .np {width: 100%; font-family: 'Nanum Pen Script', cursive;}
+    </style>
 </head>
 <body>
-    <h1>롯데글로벌로지스</h1>
-    <a href="https://jeniy01.github.io">메인 - jeniy01.github.io</a>
+
 </body>
 </html>
