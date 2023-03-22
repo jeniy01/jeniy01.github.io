@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>포트폴리오 - 롯데글로벌로지스</title>
+
     <meta name="subject" content="롯데글로벌로지스 벤치마킹 사이트">
     <meta name="keywords" content="롯데글로벌로지스, 택배, 운송, 서비스">
     <meta name="description" content="롯데글로벌로지스 홈페이지에 방문하신 것을 환영합니다.">
     <meta name="author" content="by. jeniy01">
-
-    <link re1="shortcut icon" href="../images/favicon.ico">
+    <!-- 파비콘 설정 -->
+    <link rel="shortcut icon" href="./images/favicon.ico">
 
     <meta name="og:site_name" content="롯데글로벌로지스">
     <meta name="og:title" content="포트폴리오 - 롯데글로벌로지스">
     <meta name="og:description" content="롯데글로벌로지스 홈페이지에 방문하신 것을 환영합니다.">
     <meta name="og:url" content="https://jeniy01.github.io/web1">
-    <meta name="og:image" content="../images/thumbnail.jpg">
+    <meta name="og:image" content="./images/thumbnail.jpg">
     <!-- 기본 폰트 및 초기화 로딩 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,27 +33,41 @@
     a {text-decoration: none;}
     img {border: none;}
     
-    .np {width: 100%; font-family: 'Nanum Pen Script', cursive;}
-    .container {clear:both; width:100%;}
-    .hd {clear:both; width:100%;}
-    .tnb {clear:both; width:100%; height:35px; background-color: #075d46;}
-    .tnb_wrap {clear:both; width:1600px; margin: 0 auto; height:20px;}
-    .left_tnb {float:left;}
-    .left_tnb li {float:left; line-height: 35px;}
-    .left_tnb li:first-child::after {content : "|"; color:#fff; margin-right: 14px;}
-    .left_tnb li a {margin-right:14px;}
-    .left_tnb li a:hover {color:#333;}
-    .right_tnb {float:right;}
-    .right_tnb li {float:left; line-height: 35px;}
-    .right_tnb li a {margin-left: 14px; display:block; width:30px; height:30px; text-indent: 9999px; overflow:hidden; background-image: url("../images/icons.png");}
-    .tnb ul li a {color:#fff; font-size: 0.9em;}
+    .np {font-family: 'Nanum Pen Script', cursive;}
 
-    .right_tnb li a {background-size:auto; background-position: center center;}
-    .right_tnb li a.ico1 {background-image: url("../images/icon1.png");}
-    .right_tnb li a.ico1 {background-image: url("../images/icon1.png");}
-    .right_tnb li a.ico1 {background-image: url("../images/icon1.png");}
+    .container { clear:both; width:100%; }
+    .hd { clear:both; width: 100%; }
+    .tnb { clear:both; width: 100%; height:35px; background-color: red;}
+    .tnb_wrap { clear:both;  width: 1600px; margin: 0 auto; height:20px; }
+    .left_tnb { float:left; }
+    .left_tnb li { float:left; line-height: 35px; }
+    .left_tnb li:first-child::after { content:"|"; color:#fff; margin-right: 14px; }
+    .left_tnb li a { margin-right: 14px; }
+    .left_tnb li a:hover { color: #fff; }
+    .right_tnb { float:right; }
+    .right_tnb li { float:left; line-height: 35px; }
+    .right_tnb li a { margin-left: 14px; display:block; width:30px; height:30px; text-indent:9999px; overflow: hidden; margin-top: 2px; background-size:300px 700px; }
+    .right_tnb li a { background-size:auto; background-position:center center; }
+    .right_tnb li a.sns1 { background-image: url("./images/ico_sns_youtube_main.png"); }
+    .right_tnb li a.sns2 { background-image: url("./images/ico_sns_insta_main.png"); }
+    .right_tnb li a.sns3 { background-image: url("./images/ico_sns_facebook_main.png"); }
+    .right_tnb li a.sns4 { background-image: url("./images/ico_sns_blog_main.png"); }
+    .tnb ul li a { color:#fff; font-size:0.9em; }
 
-    .gnb {clear:both; width:100%; height:80px; background-color: #fff; border-bottom: 1px soild #333;}
+    .main { clear:both; width: 100%; height:100px; background-color: #fff; }
+    .main_wrap { width: 1600px; margin: 0 auto; position: relative;}
+
+    .logo { display: block; width: 200px; height: 45px; overflow: hidden; position: absolute; top:25px; left: 0;}
+    .logo img { display: block; width: 100%; height: auto; }
+
+    .gnb { position: relative; }
+    .gnb > ul { width: 800px; height: 48px; border: 1px solid#333; margin: 0 auto;}
+    .gnb > ul > li { float: left; }
+
+    .sitemap_btn { display: block; position: absolute; top:0px; right:0px; cursor: pointer; }
+    .sitemap { position:fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 999; background-color:#fff; display: none; }
+    #sitemap_ck:checked ~ .sitemap { display: block; }
+    #sitemap_ck { display: none; }
 
     </style>
 </head>
@@ -62,25 +77,38 @@
             <nav class="tnb">
                  <div class="tnb_wrap">
                     <ul class="left_tnb">
-                        <li><a href="">온리원 푸드넷</a></li>
-                        <li><a href="">협력사 포털</a></li>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
                     </ul>
                     <ul class="right_tnb">
                         <li><a href="" class="sns1">유튜브</a></li>
                         <li><a href="" class="sns2">인스타그램</a></li>
                         <li><a href="" class="sns3">페이스북</a></li>
                         <li><a href="" class="sns4">블로그</a></li>
-                        <li><a href="" class="sns5">로그인</a></li>
-                        <li><a href="" class="sns6">회원가입</a></li>
-                        <li><a href="" class="sns7">EN</a></li>
                     </ul>
                  </div>
             </nav>
-            <nav class="gnb">
-                <div class="gnb_wrap">
-
+            <div class="main">
+                <div class="main_wrap">
+                    <a href="" class="logo"><img src="./images/img_logo_r.png"></a>
+                    <nav class="gnb">
+                        <ul class="gnb_fr">
+                            <li><a href="">회사소개</a></li>
+                            <li><a href="">사업영역</a></li>
+                            <li><a href="">ESG 경영</a></li>
+                            <li><a href="">고객지원</a></li>
+                        </ul>
+                    </nav>
+                    <label for="sitemap_ck" class="sitemap_btn">사이트맵</label>
                 </div>
-            </nav>
+            </div>
+            <input type="checkbox" id="sitemap_ck">
+            <div class="sitemap">
+                <div class="sitemap_fr">
+                    <label for="sitemap_ck" class="close_btn">닫기</label>
+                    여기는 사이트맵
+                </div>
+            </div>
         </header>
         <div class="content">
 
