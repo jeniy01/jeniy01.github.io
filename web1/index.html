@@ -25,8 +25,7 @@
     <!-- 스타일 초기화 -->
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
     <style>
-    /*border[left|right|top|bottom]-[width|style|color] 기입 시 통합속성>세부속성>세세속성 순으로 설정*/
-    * {margin: 0; padding: 0;} /*크기가 400px 박스를 좌우 가운데로 배치 : width:400px(크기지정) margin:10px(임의) auto;*/
+    * {margin: 0; padding: 0;}
     
     body {font-family: 'Noto Sans KR', sans-serif;}
     ul {list-style: none;}
@@ -54,10 +53,10 @@
     .right_tnb li a.sns4 { background-image: url("./images/ico_sns_blog_main.png"); }
     .tnb ul li a { color:#fff; font-size:0.9em; }
 
-    .main { clear:both; width: 100%; height: 80px; background-color: #fff; }
+    .main { clear:both; width: 100%; height: 70px; background-color: #fff; }
     .main_wrap { width: 1600px; margin: 0 auto; position: relative;}
 
-    .logo { display: block; width: 200px; height: 45px; overflow: hidden; position: absolute; top:10px; left: 0;}
+    .logo { display: block; width: 200px; height: 45px; overflow: hidden; position: absolute; top:8px; left: 0;}
     .logo img { display: block; width: 100%; height: auto; }
 
     .gnb { position: relative; margin-top: 10px; }
@@ -72,9 +71,9 @@
     .sub.item4 { margin-left: -480px; }
     .sub.item5 { margin-left: -640px; }
     .gnb > ul > li:hover > .sub { display: block; }
-    .sub > ul > li { float: left; width: 20%; }
-    .sub > ul > li > a { display: block; color: red; font-size: 1.1em; font-weight: 500;}
-    .sub > ul > li:hover > a { color: aqua; }
+    .sub > ul > li { width: 20%; }
+    .sub > ul > li > a { display: block; color: #333; font-size: 1.1em; font-weight: 500;}
+    .sub > ul > li:hover > a { color: red; }
 
     .sitemap_btn { display: block; position: absolute; top:20px; right:0px; cursor: pointer; width: 20px; height: 20px; overflow: hidden; text-indent: -9999px; background-image: url("./images/btn_totalmenu02.png"); background-size: 20px 20px; background-position: center -20px; }
     .sitemap { position:fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 999; background-color:#fff; display: none; }
@@ -116,13 +115,39 @@
                                 </div>
                             </li>
                             <li><a href="">사업영역</a>
-                                
+                                <div class="sub">
+                                    <ul class="dp2">
+                                        <li><a href="">택배</a></li>
+                                        <li><a href="">SCM</a></li>
+                                        <li><a href="">글로벌</a></li>
+                                        <li><a href="">컨설팅</a></li>
+                                        <li><a href="">네트워크</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li><a href="">ESG 경영</a>
-                                
+                                <div class="sub">
+                                    <ul class="dp2">
+                                        <li><a href="">ESG 경영 체계</a></li>
+                                        <li><a href="">준법경영</a></li>
+                                        <li><a href="">윤리경영</a></li>
+                                        <li><a href="">안전환경경영</a></li>
+                                        <li><a href="">인권경영</a></li>
+                                        <li><a href="">사회공헌</a></li>
+                                        <li><a href="">ESG NEWS</a></li>
+                                    </ul>
+                                </div>
                             </li>
                             <li><a href="">고객지원</a>
-                                
+                                <div class="sub">
+                                    <ul class="dp2">
+                                        <li><a href="">고객의소리</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                        <li><a href="">납품대금지급조회</a></li>
+                                        <li><a href="">공지사항</a></li>
+                                        <li><a href="">사업문의</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </nav>
