@@ -85,59 +85,80 @@
     */
 
     .page { clear:both; position:relative; width: 100vw; height: 100vh; }
-    .page_wrap { clear: both; width: 1400px; height: 0 auto; }
-    .page_title { text-align: center; font-size: 48px; font-weight: bold; padding-top: 1.5em; }
+    .page_wrap { clear:both; width: 1400px; margin: 0 auto; }
+    .page_title { text-align: center; font-size: 48px; padding-top: 1.5em; }
 
     #page1 { background-color: #fff; color: #333; }
-    #page1 .page_wrap{ width: 1280px; }
-    #page1 .tit_box { padding-left: 320px; }
-    .sub_title { font-size: 22px; color: #999; font-weight: 100; letter-spacing: -2px;}
-    .main_title { font-size: 55px; color: #000; font-weight: 700; float: left; }
-    #page1 .pg1_btn_box { clear: both; }
-    #page1 .pg1_btn_box label { display:block; padding: 0.8em; float: left; border: 1px solid #e1e1e1; border-radius: 36px; margin: 0.5rem; color:#999; cursor: pointer; }
-    #page1 .pg1_btn_box label:hover { color: #fff; background-color: rgb(189, 112, 112); }
-    .pg1_ra { display: none; }
-    #page1 .pg1_ra:checked + label { color: #fff; background-color: rgb(187, 0, 0); }
-    .ban_fr { clear: both; width: 1280px; height: 550px; padding-top: 40px; overflow: hidden; }
-    .ban_fr .ban_box { width: 600%; height: 550px; transition-duration: 0.6s; }
-    .ban_fr .ban_box li { width: 1280px; float: left; height: 550px; }
-    .ban_fr .ban_box li .pic { display: block; width: 840px; height: 550px; float: left; border-radius: 40px;}
-    .ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position: relative; background-color: #f1f1f1; border-radius: 40px;}
-    .ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size: 50px; color: rgb(187, 0, 0); font-weight: 900; }
-    .ban_fr .ban_box li .ban_tit_box .ban_tit2 { font-size: 20px; color: #666; }
+    #page1 .page_wrap { width:1280px; padding-top: 80px; }
+    #page1 .tit_box { float:right; }
+    #page1 .sub_title { font-size:22px; color: #999; font-weight: 100; letter-spacing:-2px;}
+    #page1 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
+    #page1 .pg1_btn_box { clear:both; }
+    #page1 .pg1_btn_box label { display:block; padding:0.8em; float:left; border:1px solid #e1e1e1; border-radius:36px; margin:0.5rem; color:#999; cursor:pointer; }
+    #page1 .pg1_btn_box label:hover { color:#fff; background-color:rgb(189, 112, 112); }
+    .pg1_ra { display:none; }
+    #page1 .pg1_ra:checked + label { color:#fff; background-color:rgb(187, 0, 0); }
+    .ban_fr { clear:both; width: 1280px; height: 550px; padding-top: 40px; overflow:hidden; }
+    .ban_fr .ban_box { width: 600%; height: 550px; transition-duration:0.6s; }
+    .ban_fr .ban_box li { width: 1280px; float:left; height: 550px; }
+    .ban_fr .ban_box li .pic { display:block; width: 840px; height: 550px; float:left; border-radius: 40px;}
+    .ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position:relative; background-color: #f1f1f1; border-radius:40px;}
+    .ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size:64px; line-height:3; color:rgb(187, 0, 0); margin-left:50px; }
+    .ban_fr .ban_box li .ban_tit_box .ban_tit2 { position:absolute; left:50px; bottom: 120px; font-size:36px; line-height:2; color: #666; }
+    .ban_fr .ban_box li .ban_tit_box .ban_com { position:absolute; bottom:50px; left: 50px;  font-size:16px; color:#666; }
     #pg1_ra1:checked ~ .ban_fr .ban_box { margin-left: 0;}
-    #pg1_ra2:checked ~ .ban_fr .ban_box { margin-left: -1280px;}
-    #pg1_ra3:checked ~ .ban_fr .ban_box { margin-left: -2560px;}
-    #pg1_ra4:checked ~ .ban_fr .ban_box { margin-left: -3840px;}
-    #pg1_ra5:checked ~ .ban_fr .ban_box { margin-left: -5120px;}
-    #pg1_ra6:checked ~ .ban_fr .ban_box { margin-left: -6400px;}
+    #pg1_ra2:checked ~ .ban_fr .ban_box { margin-left:-1280px;}
+    #pg1_ra3:checked ~ .ban_fr .ban_box { margin-left:-2560px;}
+    #pg1_ra4:checked ~ .ban_fr .ban_box { margin-left:-3840px;}
+    #pg1_ra5:checked ~ .ban_fr .ban_box { margin-left:-5120px;}
+    #pg1_ra6:checked ~ .ban_fr .ban_box { margin-left:-6400px;}
 
     #page2 { background-color: #f1f1f1; color:#222; }
-    #page2 .page_wrap{ width: 1280px; }
-    #page2 .tit_box { padding-left: 320px; }
-    #page2 .sub_title { font-size: 50px; color: #000; font-weight: 500; }
-    #page2 .main_title { font-size: 55px; color: #000; font-weight: 700; }
-
-    .grid_fr { clear: both; width: 1280px; padding-left: 320px; }
-    .grid_fr .grid_box { clear: both; width: 1280px; padding-top: 40px; }
-    .grid_box li { width: 410px; margin-left: 200px; float: left; height: 624px; }
+    #page2 .page_wrap { width: 1280px; padding-top:80px; }
+    #page2 .tit_box { float:right; }
+    #page2 .sub_title { font-size:50px; color: #222; font-weight: 100; }
+    #page2 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
+    .grid_fr { clear:both; width: 1280px; }
+    .grid_fr .grid_box { clear:both; width: 1280px; padding-top: 40px; }
+    .grid_box li { width: 410px; margin-right: 25px; float:left; height: 624px; }
     .grid_box li:last-child { margin-right: 0; }
-    .grid_box li a { display: block; color: #fff; background-position: center center; background-repeat: no-repeat; border-radius: 40px; margin-top: 10px; height: 300px; padding-top: 6em; padding-left: 2em; font-size: 20px; box-sizing: border-box; }
-    .grid_box li a.item1 { width: 300px; height: 500px; background-image: url("./images/img_network01.jpg"); }
-    .grid_box li a.item2 { width: 300px; height: 500px; background-image: url("./images/img_network02.jpg"); }
+    .grid_box li a { display:block; color:#fff; background-position:center center; background-repeat: no-repeat; border-radius:40px; margin-top: 25px; height: 300px; padding-top:6em;  padding-left: 2em; font-size:30px; box-sizing:border-box; }
+    .grid_box li a.item1 { background-image: url("./images/img_network01.jpg");}
+    .grid_box li a.item2 { background-image: url("./images/img_network02.jpg"); }
+    .grid_box li a.item3 { height:624px; background-image: url("./images/img_innovation07_01.jpg"); background-size:auto 100%; }
+    .grid_box li a.item4 { background-image: url("./images/img_network02.jpg"); }
+    .grid_box li a.item5 { background-image: url("./images/img_network01.jpg"); }
     .grid_box li a .grid_tit { line-height: 1.8; }
-    .grid_box li a .grid_com { font-size: 10px; }
-    /*
-    .grid_box li a.item3 { height: 624px; background-image: url("./images/"); background-size: auto 100%; }
-    .grid_box li a.item4 { background-image: url("./images/"); }
-    .grid_box li a.item5 { background-image: url("./images/"); }
-    .grid_box li a .grid_tit { line-height: 1.8; }
-    .grid_box li a.item3 .grid_tit { padding-top: 9.2em; line-height: 1.8; }
-    .grid_box li a .grid_com { font-size: 16px; }
-    */
+    .grid_box li a.item3 .grid_tit { padding-top:9.2em; line-height: 1.8; }
+    .grid_box li a .grid_com { font-size:16px; }
 
-    #page3 { background-color: rgb(245, 185, 185); color: #333; }
+    #page3 { background-color:rgb(189, 112, 112); color:#fff; }
+    #page3 .page_wrap { width: 1280px; padding-top:80px; }
+    #page3 .tit_box { float:right; }
+    #page3 .sub_title { font-size:22px; color: #f1f1f1; font-weight: 100; letter-spacing:-2px;}
+    #page3 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
+    .col_fr { clear:both; width: 1280px; padding-top: 40px; }
+    .col_fr .col_box { clear: both; width: 1280px; }
+    .col_fr .col_box li.left { float:left; width: 844px; height: 458px; background-color:#fff; color:#000; border-radius:25px; box-sizing: border-box; padding:38px; }
+    .one_line { font-size:28px; line-height: 2; padding-bottom:18px; }    
+    .inv_p { clear:both; }
+    .large_txt { float:left; font-size:70px; padding-right: 40px; }
+    .small_txt { float:left; font-size:18px; padding-top: 14px; line-height: 1.8; }
+    .col_dl { clear:both; padding-top:30px;  }
+    .col_dl dd { width:250px; float:left; margin:20px 0px; font-size:22px; font-weight:100; line-height: 1.6; }
+    .col_dl dd .d_tit { font-weight: 200; color:#999; }
+    .col_dl dd .d_com { font-weight: 100; }
+    .gtxt { color:rgb(187, 0, 0); padding-left: 24px; }
+    .ltxt { color:#999; }
+    .dot:after { content:"|"; padding-left: 24px; }
+    .col_fr .col_box li.right { float:right; width: 410px; height: 458px; }
+    .col_fr .col_box li.right a { display:block; background-color: #fff; color:#333; height: 135px; line-height: 135px;  margin-bottom: 26px; border-radius:25px; }
+    .col_fr .col_box li.right a span { padding-left: 20px; }
+    .col_fr .col_box li.right a:after { content:""; display:block; width: 28px; height: 20px; background-image: url("./images/btn_totalmenu02.png"); background-repeat: no-repeat; background-position: -495px -72px; float:right; margin-top:50px; margin-right:20px; }
+    .col_fr .col_box li.right a span:before { content:""; display:block; float:left; width:79px; height:76px; background-image:url("./images/btn_totalmenu02.png"); background-repeat: no-repeat; background-position:0px -682px; margin-top:30px; margin-left:20px; }
+    
     #page4 { background-color: #fff; color: #333; }
+    #page5 { background-color: #eee; color:#222; }
 
     </style>
 </head>
@@ -160,7 +181,9 @@
             </nav>
             <div class="main">
                 <div class="main_wrap">
-                    <a href="" class="logo"><img src="./images/img_logo_r.png"></a>
+                    <a href="" class="logo">
+                        <img src="./images/img_logo_r.png" alt="롯데글로벌로지스로고">
+                    </a>
                     <nav class="gnb">
                         <ul class="gnb_fr">
                             <li><a href="">회사소개</a>
@@ -229,77 +252,101 @@
             </figure>
             <!-- section.page#page$*4>h2.page_title{페이지제목$}+div.page_wrap -->
             <section class="page" id="page1">
-                <h2 class="page_title" style="visibility: hidden;">지구가 작아지는 물류혁신</h2>
+                <h2 class="page_title" style="display:none;">지구가 작아지는 물류혁신</h2>
                 <div class="page_wrap">
                     <div class="tit_box">
                         <h3 class="sub_title">롯데글로벌로지스</h3>
                         <h2 class="main_title">지구가 작아지는 물류혁신</h2>
-                        <article class="pg1_btn_box">
-                            <!-- (input[type=radio][name=pg_ra]#pg1_ra$.pg1_ra+label[for=pg1_ra$].item$)*6 -->
-                            <input type="radio" name="pg_ra" id="pg1_ra1" class="pg1_ra" checked>
-                            <label for="pg1_ra1" class="item1">택배서비스</label>
-                            <input type="radio" name="pg_ra" id="pg1_ra2" class="pg1_ra">
-                            <label for="pg1_ra2" class="item2">SCM(창고)</label>
-                            <input type="radio" name="pg_ra" id="pg1_ra3" class="pg1_ra">
-                            <label for="pg1_ra3" class="item3">SCM(수송/배송)</label>
-                            <input type="radio" name="pg_ra" id="pg1_ra4" class="pg1_ra">
-                            <label for="pg1_ra4" class="item4">항만하역</label>
-                            <input type="radio" name="pg_ra" id="pg1_ra5" class="pg1_ra">
-                            <label for="pg1_ra5" class="item5">해운포워딩</label>
-                            <input type="radio" name="pg_ra" id="pg1_ra6" class="pg1_ra">
-                            <label for="pg1_ra6" class="item6">항공포워딩</label>
-                            <!-- div.ban_fr>ul.ban_box>li.item$>img.pic+(div.ban_tit_box>h2.ban_tit1+h2.ban_tit2+p.ban_com) -->
-                            <div class="ban_fr">
-                                <ul class="ban_box">
-                                    <li class="item1">
-                                        <img src="./images/img_innovation01_01.jpg" alt="롯데글로벌로지스" class="pic">
-                                        <div class="ban_tit_box">
-                                            <h2 class="ban_tit1">01</h2>
-                                            <h2 class="ban_tit2">24시간 빠르고 정확한 Door To Door 택배서비스를 제공합니다.</h2>
-                                        </div>
-                                    </li>
-                                    <li class="item2">
-                                        <img src="./images/img_innovation02_01.jpg" alt="롯데글로벌로지스" class="pic">
-                                        <div class="ban_tit_box">
-                                            <h2 class="ban_tit1">02</h2>
-                                            <h2 class="ban_tit2">탁월한 W&T서비스를 통해 최적의 물류프로세스를 실현합니다.</h2>
-                                        </div>
-                                    </li>
-                                    <li class="item3">
-                                        <img src="./images/img_innovation03_01.jpg" alt="롯데글로벌로지스" class="pic">
-                                        <div class="ban_tit_box">
-                                            <h2 class="ban_tit1">03</h2>
-                                            <h2 class="ban_tit2">최적의 운송 Mode를 통한 운송 서비스를 제공합니다.</h2>
-                                        </div>
-                                    </li>
-                                    <li class="item4">
-                                        <img src="./images/img_innovation04_01.jpg" alt="롯데글로벌로지스" class="pic">
-                                        <div class="ban_tit_box">
-                                            <h2 class="ban_tit1">04</h2>
-                                            <h2 class="ban_tit2">첨단장비와 전문인력을 보유한 롯데글로벌로지스가 대한민국의 항만을 새롭게 움직입니다.</h2>
-                                        </div>
-                                    </li>
-                                    <li class="item5">
-                                        <img src="./images/img_innovation05_01.jpg" alt="롯데글로벌로지스" class="pic">
-                                        <div class="ban_tit_box">
-                                            <h2 class="ban_tit1">05</h2>
-                                            <h2 class="ban_tit2">다양한 형태의 해상 수출입 화물에 대해 최상의 해상운송 서비스를 제공합니다.</h2>
-                                        </div>
-                                    </li>
-                                    <li class="item6">
-                                        <img src="./images/img_innovation06_01.jpg" alt="롯데글로벌로지스" class="pic">
-                                        <div class="ban_tit_box">
-                                            <h2 class="ban_tit1">06</h2>
-                                            <h2 class="ban_tit2">세계를 거미줄처럼 연결하는 글로벌 네트워크로 원-스톱 항공물류 서비스를 제공합니다.</h2>
-                                        </div>
-                                </ul>
-                            </div>
-                        </article>
                     </div>
+                    <article class="pg1_btn_box">
+                        <!-- (input[type=radio][name=pg_ra]#pg1_ra$.pg1_ra+label[for=pg1_ra$].item$)*6 -->
+                        <input type="radio" name="pg_ra" id="pg1_ra1" class="pg1_ra" checked>
+                        <label for="pg1_ra1" class="item1">택배서비스</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra2" class="pg1_ra">
+                        <label for="pg1_ra2" class="item2">SCM(창고)</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra3" class="pg1_ra">
+                        <label for="pg1_ra3" class="item3">SCM(수송/배송)</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra4" class="pg1_ra">
+                        <label for="pg1_ra4" class="item4">항만하역</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra5" class="pg1_ra">
+                        <label for="pg1_ra5" class="item5">해운포워딩</label>
+                        <input type="radio" name="pg_ra" id="pg1_ra6" class="pg1_ra">
+                        <label for="pg1_ra6" class="item6">항공포워딩</label>
+                        <!-- div.ban_fr>ul.ban_box>li.item$>img.pic+(div.ban_tit_box>h2.ban_tit1+h2.ban_tit2+p.ban_com) -->
+                        <div class="ban_fr">
+                            <ul class="ban_box">
+                                <li class="item1">
+                                    <img src="./images/img_innovation01_01.jpg" alt="택배서비스" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">01</h2>
+                                        <h2 class="ban_tit2">택배서비스</h2>
+                                        <p class="ban_com">24시간 빠르고 정확한<br>
+                                            Door To Door 택배서비스를<br>
+                                            제공합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item2">
+                                    <img src="./images/img_innovation02_01.jpg" alt="SCM(창고)" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">02</h2>
+                                        <h2 class="ban_tit2">SCM(창고)</h2>
+                                        <p class="ban_com">탁월한 W&T서비스를 통해<br>
+                                            최적의 물류프로세스를<br>
+                                            실현합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item3">
+                                    <img src="./images/img_innovation03_01.jpg" alt="SCM(수송/배송)" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">03</h2>
+                                        <h2 class="ban_tit2">SCM(수송/배송)</h2>
+                                        <p class="ban_com">최적의 운송 Mode를 통한<br>
+                                            운송 서비스를 제공합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item4">
+                                    <img src="./images/img_innovation04_01.jpg" alt="항만하역" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">04</h2>
+                                        <h2 class="ban_tit2">항만하역</h2>
+                                        <p class="ban_com">첨단장비와 전문인력을 보유한<br>
+                                            롯데글로벌로지스가 대한민국의<br>
+                                            항만을 새롭게 움직입니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item5">
+                                    <img src="./images/img_innovation05_01.jpg" alt="해운포워딩" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">05</h2>
+                                        <h2 class="ban_tit2">해운포워딩</h2>
+                                        <p class="ban_com">다양한 형태의 해상 수출입<br>
+                                            화물에 대해 최상의 해상운송<br>
+                                            서비스를 제공합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="item6">
+                                    <img src="./images/img_innovation06_01.jpg" alt="항공포워딩" class="pic">
+                                    <div class="ban_tit_box">
+                                        <h2 class="ban_tit1">06</h2>
+                                        <h2 class="ban_tit2">항공포워딩</h2>
+                                        <p class="ban_com">세계를 거미줄처럼 연결하는<br>
+                                            글로벌 네트워크로 원-스톱<br>
+                                            항공물류 서비스를 제공합니다.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
                 </div>
             </section>
             <section class="page" id="page2">
-                <h2 class="page_title" style="visibility: hidden;">국내, 해외 네트워크 기반 글로벌 원스톱 서비스 제공</h2>
+                <h2 class="page_title" style="display:none">국내, 해외 네트워크 기반 글로벌 원스톱 서비스 제공</h2>
                 <div class="page_wrap">
                     <div class="tit_box">
                         <h3 class="sub_title">국내, 해외 네트워크 기반</h3>
@@ -311,33 +358,119 @@
                         <li>
                             <a href="" class="item1">
                                 <h3 class="grid_tit">국내 네트워크</h3>
-                                <p class="grid_com">국내 모든 지역을 연결하는 Total Logistics Service를 통해 안전하고 신속한 물류운송 서비스를 제공합니다.</p>
+                                <p class="grid_com">국내 모든 지역을 연결하는<br>
+                                Total Logistics Service를 통해 안전하고<br>
+                                신속한 물류운송 서비스를 제공합니다.
+                                </p>
                             </a>
                             <a href="" class="item2">
                                 <h3 class="grid_tit">해외 네트워크</h3>
-                                <p class="grid_com">전 세계를 하나로 연결하는 해외 네트워크로 Top-Tier 글로벌 종합물류기업을 향해 힘차게 비상합니다.</p>
+                                <p class="grid_com">전 세계를 하나로 연결하는 해외 네트워크로<br>
+                                Top-Tier 글로벌 종합물류기업을 향해<br>
+                                힘차게 비상합니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="item3">
+                                <h3 class="grid_tit">컨테이너 내륙운송</h3>
+                                <p class="grid_com">신속하고 정확한 수출입<br>
+                                컨테이너 운송서비스를<br>
+                                제공합니다.
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="item4">
+                                <h3 class="grid_tit">국제특송</h3>
+                                <p class="grid_com">세계 주요 지역의 수출입물품에<br>
+                                대해 신속한 통관 및 정확한<br>
+                                배송 서비스를 제공합니다.
+                                </p>
+                            </a>
+                            <a href="" class="item5">
+                                <h3 class="grid_tit">ESG 경영 체계</h3>
+                                <p class="grid_com">환경 보호를 위해 앞장서고,<br>
+                                    다양한 사회공헌 활동을 위해 노력하며,<br>
+                                    철저히 법과 윤리를 지켜서 경영합니다.
+                                </p>
                             </a>
                         </li>
                     </ul>
                 </article>
-            </section>
-            <section class="page" id="page3">
-                <h2 class="page_title" style="display:none">회사소개</h2>
-                <div class="page_wrap">
-
+            </div>
+        </section>
+        <section class="page" id="page3">
+            <h2 class="page_title" style="display:none">회사소개</h2>
+            <div class="page_wrap">
+                <div class="tit_box">
+                    <h3 class="sub_title">IR</h3>
+                    <h2 class="main_title" style="color:#fff">INVESTOR RELATIONS</h2>
                 </div>
-            </section>
-            <section class="page" id="page4">
-                <h2 class="page_title">공지사항</h2>
-                <div class="page_wrap">
+                <!-- article.col_fr>ul.col_box>li.left+li.right -->
+                <article class="col_fr">
+                    <ul class="col_box">
+                        <li class="left">
+                            <p class="one_line"><span class="dot">롯데글로벌로지스</span> <span class="gtxt">051504</span></p>
+                            <div class="inv_p">
+                                <p class="large_txt">29,900</p>
+                                <p class="small_txt">
+                                    <span class="ltxt">2023/04/19 15:29:38</span><br>
+                                    <span class="btxt">─ 0 &nbsp; &nbsp; 0.00%</span>
+                                </p>
+                            </div>
+                            <dl class="col_dl">
+                                <dd>
+                                    <h4 class="d_tit">시가</h4>
+                                    <p class="d_com">29,800원</p>
+                                </dd>
+                                <dd>
+                                    <h4 class="d_tit">고가</h4>
+                                    <p class="d_com">29,450원</p>
+                                </dd>
+                                <dd>
+                                    <h4 class="d_tit">저가</h4>
+                                    <p class="d_com">29,600원</p>
+                                </dd>
+                                <dd>
+                                    <h4 class="d_tit">전일가격</h4>
+                                    <p class="d_com">29,600원</p>
+                                </dd>
+                                <dd>
+                                    <h4 class="d_tit">거래량</h4>
+                                    <p class="d_com">21,577주</p>
+                                </dd>
+                                <dd>
+                                    <h4 class="d_tit">거래대금</h4>
+                                    <p class="d_com">691,197,058원</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="right">
+                            <a href="" class="item1"><span>재무제표</span></a>
+                            <a href="" class="item2"><span>공시현황</span></a>
+                            <a href="" class="item3"><span>IR자료실</span></a>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="page" id="page4">
+            <h2 class="page_title">고객의 소리</h2>
+            <div class="page_wrap">
 
-                </div>
-            </section>
-            </section>
+            </div>
+        </section>
+        <section class="page" id="page5">
+            <h2 class="page_title">공지사항</h2>
+            <div class="page_wrap">
+
+            </div>
+        </section>
         </div>
-            <footer class="ft">
+        <footer class="ft">
 
-            </footer>
+        </footer>
     </div>
     <div class="fix_area">
 
