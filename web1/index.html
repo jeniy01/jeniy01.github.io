@@ -90,14 +90,14 @@
 
     #page1 { background-color: #fff; color: #333; }
     #page1 .page_wrap { width:1280px; padding-top: 80px; }
-    #page1 .tit_box { float:right; }
-    #page1 .sub_title { font-size:22px; color: #999; font-weight: 100; letter-spacing:-2px;}
+    #page1 .tit_box { float:left; clear:both; padding-top:80px; width:1280px; margin:0 auto;}
+    #page1 .sub_title { font-size:22px; color: #999; font-weight: 100; }
     #page1 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
     #page1 .pg1_btn_box { clear:both; }
     #page1 .pg1_btn_box label { display:block; padding:0.8em; float:left; border:1px solid #e1e1e1; border-radius:36px; margin:0.5rem; color:#999; cursor:pointer; }
     #page1 .pg1_btn_box label:hover { color:#fff; background-color:rgb(189, 112, 112); }
-    .pg1_ra { display:none; }
     #page1 .pg1_ra:checked + label { color:#fff; background-color:rgb(187, 0, 0); }
+    .pg1_ra { display:none; }
     .ban_fr { clear:both; width: 1280px; height: 550px; padding-top: 40px; overflow:hidden; }
     .ban_fr .ban_box { width: 600%; height: 550px; transition-duration:0.6s; }
     .ban_fr .ban_box li { width: 1280px; float:left; height: 550px; }
@@ -115,7 +115,7 @@
 
     #page2 { background-color: #f1f1f1; color:#222; }
     #page2 .page_wrap { width: 1280px; padding-top:80px; }
-    #page2 .tit_box { float:right; }
+    #page2 .tit_box { float:left; }
     #page2 .sub_title { font-size:50px; color: #222; font-weight: 100; }
     #page2 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
     .grid_fr { clear:both; width: 1280px; }
@@ -134,7 +134,7 @@
 
     #page3 { background-color:rgb(189, 112, 112); color:#fff; }
     #page3 .page_wrap { width: 1280px; padding-top:80px; }
-    #page3 .tit_box { float:right; }
+    #page3 .tit_box { float:left; }
     #page3 .sub_title { font-size:22px; color: #f1f1f1; font-weight: 100; letter-spacing:-2px;}
     #page3 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
     .col_fr { clear:both; width: 1280px; padding-top: 40px; }
@@ -154,11 +154,80 @@
     .col_fr .col_box li.right { float:right; width: 410px; height: 458px; }
     .col_fr .col_box li.right a { display:block; background-color: #fff; color:#333; height: 135px; line-height: 135px;  margin-bottom: 26px; border-radius:25px; }
     .col_fr .col_box li.right a span { padding-left: 20px; }
-    .col_fr .col_box li.right a:after { content:""; display:block; width: 28px; height: 20px; background-image: url("./images/btn_totalmenu02.png"); background-repeat: no-repeat; background-position: -495px -72px; float:right; margin-top:50px; margin-right:20px; }
-    .col_fr .col_box li.right a span:before { content:""; display:block; float:left; width:79px; height:76px; background-image:url("./images/btn_totalmenu02.png"); background-repeat: no-repeat; background-position:0px -682px; margin-top:30px; margin-left:20px; }
-    
+    .col_fr .col_box li.right a:after { content:""; display:block; width: 28px; height: 35px; background-repeat: no-repeat; background-position:0px -682px; margin-top: 30px; margin-left: 20px; }
+    .col_fr .col_box li.right a span:before { content:""; display:block; float:left; width:79px; height:76px; background-repeat: no-repeat; background-position:0px -682px; margin-top: 30px; margin-left: 20px; }
+
     #page4 { background-color: #fff; color: #333; }
+    #page4 .tit_box { clear:both; padding-top:80px; width:1280px; margin:0 auto; }
+    #page4 .sub_title { font-size:22px; color: #222; font-weight: 100; }
+    #page4 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
+    .more { display:block; position:absolute; top:60px; right:200px; font-size:68px; font-weight:bold; width:80px; height:80px; border:1px solid #ccc; text-align:center; color:#999; }
+    .board_fr { clear:both; width:1280px; margin:0px auto; padding-top:40px; }
+    .tb1 { clear:both; display:table; border-collapse:collapse; }
+    .tb1 tr { display:table-row; width:1280px; }
+    .tb1 td { display:table-cell; min-height:50px; padding-top:20px; padding-bottom:20px; border-top:1px solid #ccc; }
+    .tb1 tr:last-child td { border-bottom:1px solid #ccc; }
+    .tb1 td.td1 { vertical-align:top; width: 100px; text-align:left; font-size:32px; color: rgb(187, 0, 0); font-weight:100; }
+    .tb1 td a { display:block; color:#333; transition-duration:0.4s; }
+    .tb1 td a .td_tit { width:1100px; font-size:28px; line-height:1.4; font-weight:200; padding-right:36px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .tb1 td a .td_com { width:1100px; font-size:18px; line-height:2.2; font-weight:100; color:#999; padding-right:36px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .tb1 td a:hover { color:rgb(189, 112, 112); }
+    .tb1 td a:hover .td_com { color:rgb(189, 112, 112); }
+
     #page5 { background-color: #eee; color:#222; }
+    #page5 .tit_box { clear:both; padding-top:80px; }
+    #page5 .sub_title { font-size:22px; color: #222; font-weight: 100; }
+    #page5 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
+    .colm_fr { clear:both; }
+    .colm_fr .lst_tit { clear:both; padding-top:30px; font-size:28px; font-weight:100; line-height:2; }
+    .lst1, .lst2 { clear:both; }
+    .lst1 li, .lst2 li { float:left; width:410px; margin-right:25px; height:250px; background-color:#fff; border-radius:25px; box-sizing:border-box; padding:28px; padding-left:40px; }
+    .lst1 li:last-child, .lst2 li:last-child { margin-right:0; }
+    .colm_fr ul .item_tit { font-size:32px; line-height:2.8; color:rgb(187, 0, 0); }
+    .colm_fr ul li::before { content:""; display:block; width:60px; height:60px; background-repeat:no-repeat; }
+    .colm_fr ul li a { display:block; width:150px; line-height:30px; padding-left:18px; background-color: rgb(187, 0, 0); color:#fff; border-radius:20px; }
+    .colm_fr ul li a:after { content:"→"; padding-left:60px; }
+    .colm_fr .lst1 .item1:before { background-image: url("./images/ico_srch.png"); }
+    .colm_fr .lst1 .item2:before { background-image: url("./images/ico_srch.png"); }
+    .colm_fr .lst1 .item3:before { background-image: url("./images/ico_srch.png"); }
+    .colm_fr .lst2 .item1:before { background-image: url("./images/ico_srch.png"); }
+    .colm_fr .lst2 .item2:before { background-image: url("./images/ico_srch.png"); }
+    .colm_fr .lst2 .item3:before { background-image: url("./images/ico_srch.png"); }
+    /*
+    .colm_fr .lst1 .item1:before { background-position:0px -400px; }
+    .colm_fr .lst1 .item2:before { background-position:-60px -400px; }
+    .colm_fr .lst1 .item3:before { background-position:-120px -400px; }
+    .colm_fr .lst2 .item1:before { background-position:-180px -400px; }
+    .colm_fr .lst2 .item2:before { background-position:-240px -400px; }
+    .colm_fr .lst2 .item3:before { background-position:0px -460px; }
+    */
+
+    #ft { clear:both; }
+    .ft .row { clear:both; padding-top:25px; padding-bottom:25px; min-height:60px; }
+    .ft .row1 { background-color:red; }
+    .ft .fnb li { float:left; margin-right:50px; line-height:60px; }
+    .ft .fnb li a { color:#fff; font-size:18px; }
+    .ft .fnb li a:hover { color:rgb(189, 112, 112); }
+    .ft #favo { display:block; line-height:60px; height:60px; width:200px; text-align:center; font-size:18px; }
+
+    .ft .row2 { background-color:#f1f1f1; height:229px; }
+    .ft .slogan { font-size:36px; color:#e0e0e0; }
+    .ft .ft_link_fr dl { float:left; font-size:16px; line-height:32px; padding-left:28px; }
+    .ft .ft_link_fr dl a { color:#a0a0a0; }
+    .ft .ft_link_fr dl a:hover { color:#333; }
+
+    .ft .row3 { background-color:#fff; }
+    .ft .ft_logo { width:190px; height:43px; background-image:url("./images/img_logo_footer.jpg"); background-size:190px auto; }
+    .ft .copyright { height:43px; line-height:43px; font-style:normal; font-weight:100; color:#a0a0a0; }
+
+    .ft_wrap { clear:both; width:1280px; margin:0 auto; }
+    .ft_wrap .left { float:left; }
+    .ft_wrap .right { float:right; }
+
+    .fix_area { position:fixed; z-index:9999; bottom:40px; right:40px; }
+    .fix_area .cir_box { display:block; width:60px; height: 60px; text-align:center; border-radius:35px; box-sizing:border-box; padding:6px; font-size:12px; padding-top:15px; overflow:hidden; box-shadow:1px 1px 6px #333; }
+    .fix_area .counsel { background-color:rgba(255,255,255,0.75); color:#333; }
+    .fix_area .totop { background-color:red; color:#fff; margin-top:20px; }
 
     </style>
 </head>
@@ -447,33 +516,215 @@
                             </dl>
                         </li>
                         <li class="right">
-                            <a href="" class="item1"><span>재무제표</span></a>
-                            <a href="" class="item2"><span>공시현황</span></a>
-                            <a href="" class="item3"><span>IR자료실</span></a>
+                            <a href="" class="item1"><img src="./images/btn_arrow.png" alt="표" width="10" height="17"><span>재무제표</span></a>
+                            <a href="" class="item2"><img src="./images/btn_arrow.png" alt="현황" width="10" height="17"><span>공시현황</span></a>
+                            <a href="" class="item3"><img src="./images/btn_arrow.png" alt="자료" width="10" height="17"><span>IR자료실</span></a>
                         </li>
                     </ul>
                 </article>
             </div>
         </section>
         <section class="page" id="page4">
-            <h2 class="page_title">고객의 소리</h2>
+            <h2 class="page_title" style="display:none">공지사항</h2>
             <div class="page_wrap">
-
+                <div class="tit_box">
+                    <h3 class="sub_title">롯데글로벌로지스의 새로운 소식을 전해드립니다.</h3>
+                    <h2 class="main_title">공지사항</h2>
+                </div>
+                <a href="" class="more">+</a>
+                <!-- article.board_fr>table.tb1>tbody>tr*5>td.td1+(td.td2>a>h3.td_tit+p.td_com) -->
+                <article class="board_fr">
+                    <table class="tb1">
+                        <tbody>
+                            <tr>
+                                <td class="td1">5</td>
+                                <td class="td2">
+                                    <a href="">
+                                        <h3 class="td_tit">‘제로 웨이스트 챌린지 with 롯데글로벌로지스’ 이벤트</h3>
+                                        <p class="td_com">제로웨이스트 챌린지 With 롯데글로벌로지스 이벤트 - 롯데글로벌로지스가 지구의 날(4/22)을 맞아 건강한 지구를 만들어 가기 위해 ‘제로 웨이스트 챌린지’를 시행합니다.</p>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">4</td>
+                                <td class="td2">
+                                    <a href="">
+                                        <h3 class="td_tit">롯데택배 왔나봄! 리뷰이벤트 하나봄! 롯데택배 리뷰 이벤트</h3>
+                                        <p class="td_com">사진 or 영상과 함께 네이버 블로그 리뷰를 작성해주세요! 리뷰 작성 시 해시태그는 필수! 홈페이지 접속 후 이벤트 제출하면 끝! 이벤트에 참여하신 내용은 마케팅 용도로 사용 될 수 있습니다.</p>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">3</td>
+                                <td class="td2">
+                                    <a href="">
+                                        <h3 class="td_tit">(당첨자 안내) 고객 만족도 설문조사 이벤트</h3>
+                                        <p class="td_com">롯데 모바일상품권은 3/16(목)에 발송됩니다. 경품은 입력된 정보로 발송되며 정보 오류로 인해 경품을 받지 못하시는 경우 재발송은 불가합니다. 당사 사정에 따라 당첨자 발표 일자가 변경될 수 있습니다.</p>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">2</td>
+                                <td class="td2">
+                                    <a href="">
+                                        <h3 class="td_tit">(안내) 롯데택배 사칭 문자, 이메일 주의</h3>
+                                        <p class="td_com">롯데택배를 이용해 주시는 고객님들께 감사드립니다. 롯데택배 사칭 문자 스미싱(Smishing) 및 이메일 피싱(Phishing)에 대해 유의사항을 안내 드립니다. 문자 및 이메일을 받으신 경우, 절대 URL 및 첨부파일을 클릭하지 마시고 삭제하시기 바랍니다.</p>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td1">1</td>
+                                <td class="td2">
+                                    <a href="">
+                                        <h3 class="td_tit">(안내) 개인정보처리방침 변경 안내(시행일자 2022.12.12)</h3>
+                                        <p class="td_com">항상 롯데글로벌로지스를 사랑해주시는 고객여러분께 감사드립니다. 당사 개인정보처리방침이 아래와 같이 변경되어 고객님들께 알려드립니다. 롯데글로벌로지스㈜는 고객님의 권리보호와 개인정보보호를 위해 더욱 노력하겠습니다.</p>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
             </div>
         </section>
         <section class="page" id="page5">
-            <h2 class="page_title">공지사항</h2>
+            <h2 class="page_title" style="display:none">고객상담센터</h2>
             <div class="page_wrap">
-
+                <div class="tit_box">
+                    <h3 class="sub_title">CS CENTER</h3>
+                    <h2 class="main_title">고객상담센터</h2>
+                </div>
+                <!-- article.colm_fr>(h3.lst_tit+(ul.lst$*2>lli.item$*3>h3.item_tit+a.item_more{상담하기}))*2 -->
+                <article class="colm_fr">
+                    <h3 class="lst_tit">비즈니스 상담센터</h3>
+                    <ul class="lst1">
+                        <li class="item1">
+                            <h3 class="item_tit">택배 상담</h3>
+                            <a href="" class="item_more">상담하기</a>
+                        </li>
+                        <li class="item2">
+                            <h3 class="item_tit">배송 상담</h3>
+                            <a href="" class="item_more">상담하기</a>
+                        </li>
+                        <li class="item3">
+                            <h3 class="item_tit">협력사 상담</h3>
+                            <a href="" class="item_more">상담하기</a>
+                        </li>
+                    </ul>
+                    <h3 class="lst_tit">간편 상담센터</h3>
+                    <ul class="lst2">
+                        <li class="item1">
+                            <h3 class="item_tit">챗봇 문의</h3>
+                            <a href="" class="item_more">문의하기</a>
+                        </li>
+                        <li class="item2">
+                            <h3 class="item_tit">고객의 소리</h3>
+                            <a href="" class="item_more">상담하기</a>
+                        </li>
+                        <li class="item3">
+                            <h3 class="item_tit">FAQ</h3>
+                            <a href="" class="item_more">보러가기</a>
+                        </li>
+                    </ul>
+                </article>
             </div>
         </section>
-        </div>
-        <footer class="ft">
-
-        </footer>
     </div>
-    <div class="fix_area">
-
-    </div>
+    <footer class="ft">
+        <article class="row row1">
+            <div class="ft_wrap">
+                <!-- (nav.fnb>ul.fnb_box>li*5>a{메뉴$})+(select.favorite>option{사이트$}*6) -->
+                <nav class="fnb left">
+                    <ul class="fnb_box">
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">운영/관리방침</a></li>
+                        <li><a href="">법적고지</a></li>
+                        <li><a href="">이메일주소무단수집거부</a></li>
+                        <li><a href="">이용약관</a></li>
+                    </ul>
+                </nav>
+                <select name="favo" id="favo" class="favo right" onchange="favo(this)">
+                    <option value="">FAMILY SITE</option>
+                    <option value="https://www.lottewellfood.com/">롯데웰푸드</option>
+                    <option value="https://www.lotteshopping.com/main">롯데백화점</option>
+                    <option value="https://www.lottehotel.com/global/ko.html">롯데호텔</option>
+                    <option value="https://www.lottecard.co.kr/app/LPMAIAA_V100.lc">롯데카드</option>
+                    <option value="http://www.lottehomeshopping.com/user/main/index.lotte">롯데홈쇼핑</option>
+                    <option value="https://www.lotteworld.com/gate.html">롯데월드</option>
+                </select>
+                <script>
+                function favo(s){
+                    var hs = s.value;
+                    if(hs!=""){
+                        window.open(hs, "팝업");
+                    }
+                }    
+                </script>
+            </div>
+        </article>
+        <article class="row row2">
+            <div class="ft_wrap">
+                <div class="slogan left">
+                    Connecting<br>
+                    World,<br>
+                    Enrich<br>
+                    Life
+                </div>
+                <!-- nav.ft_col2>dl.ft_link.item$*5>dt{솔루션$}+(dd>a)*6 -->
+                <nav class="ft_link_fr right">
+                    <dl class="ft_link item1">
+                        <dt>회사소개</dt>
+                        <dd><a href="">회사소개</a></dd>
+                        <dd><a href="">투자정보</a></dd>
+                        <dd><a href="">인재채용</a></dd>
+                        <dd><a href="">PR</a></dd>
+                    </dl>
+                    <dl class="ft_link item2">
+                        <dt>사업영역</dt>
+                        <dd><a href="">택배</a></dd>
+                        <dd><a href="">SCM</a></dd>
+                        <dd><a href="">글로벌</a></dd>
+                        <dd><a href="">컨설팅</a></dd>
+                        <dd><a href="">네트워크</a></dd>
+                    </dl>
+                    <dl class="ft_link item3">
+                        <dt>ESG 경영</dt>
+                        <dd><a href="">ESG 경영 체계</a></dd>
+                        <dd><a href="">준법경영</a></dd>
+                        <dd><a href="">윤리경영</a></dd>
+                        <dd><a href="">안전환경경영</a></dd>
+                        <dd><a href="">인권경영</a></dd>
+                        <dd><a href="">사회공헌</a></dd>
+                        <dd><a href="">ESG NEWS</a></dd>
+                    </dl>
+                    <dl class="ft_link item4">
+                        <dt>고객지원</dt>
+                        <dd><a href="">고객의소리</a></dd>
+                        <dd><a href="">FAQ</a></dd>
+                        <dd><a href="">납품대금지급조회</a></dd>
+                        <dd><a href="">공지사항</a></dd>
+                        <dd><a href="">사업문의</a></dd>
+                    </dl>
+                    <dl class="ft_link item5">
+                        <dt>채용</dt>
+                        <dd><a href="">인사정보</a></dd>
+                        <dd><a href="">롯데글로벌로지스 人SIDE</a></dd>
+                        <dd><a href="">채용정보</a></dd>
+                        <dd><a href="">인재 POOL</a></dd>
+                    </dl>
+                </nav>
+            </div>
+        </article>
+        <article class="row row3">
+            <div class="ft_wrap">
+                <div class="ft_logo left"></div>
+                <address class="copyright right">서울시 중구 통일로 10(연세 세브란스 빌딩)   COPYRIGHT © 2019 LOTTE GLOBAL LOGISTICS CO,.LTD ALL RIGHTS RESERVED.</address>
+            </div>
+        </article>
+    </footer>
+</div>
+<div class="fix_area">
+    <a href="#page5" class="cir_box counsel">1:1<br>상담</a>
+    <a href="#" class="cir_box totop">↑<br>TOP</a>
+</div>
 </body>
 </html>
