@@ -1,0 +1,11 @@
+/*풀페이지*/
+.fullpage { clear:both; position:relative; width:100vw; height:100vh; overflow:hidden; }
+.fullpage > * { display:block; width:100%; }
+
+/**/
+
+/*3컬럼-ul>li 백그라운드이미지 다 지우기*/
+
+/*2컬럼-page3 ul>li 백그라운드이미지 다 지우기*/
+
+/*tabletag 2컬럼-page4 백그라운드이미지 다 지우기*/
