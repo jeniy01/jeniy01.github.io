@@ -4,15 +4,15 @@
 /*
 .vs vidio { display: block; width: 100px }
 */
-.page { clear:both; position:relative; width: 100vw; height: 100vh; }
-.page_wrap { clear:both; width: 1400px; margin: 0 auto; }
-.page_title { text-align: center; font-size: 48px; padding-top: 1.5em; }
+.page { clear:both; position:relative; width:100vw; height:100vh; }
+.page_wrap { clear:both; width:1400px; margin:0 auto; }
+.page_title { text-align:center; font-size:48px; padding-top:1.5em; }
 
-#page1 { background-color: #fff; color: #333; }
-#page1 .page_wrap { width:1280px; padding-top: 80px; }
+#page1 { background-color:#fff; color:#333; }
+#page1 .page_wrap { width:1280px; padding-top:80px; }
 #page1 .tit_box { float:left; clear:both; padding-top:80px; width:1280px; margin:0 auto;}
-#page1 .sub_title { font-size:22px; color: #999; font-weight: 100; }
-#page1 .main_title { font-size:55px; color: #000; font-weight:700; float:left; }
+#page1 .sub_title { font-size:22px; color:#999; font-weight:100; }
+#page1 .main_title { font-size:55px; color:#000; font-weight:700; float:left; }
 #page1 .pg1_btn_box { clear:both; }
 #page1 .pg1_btn_box label { display:block; padding:0.8em; float:left; border:1px solid #e1e1e1; border-radius:36px; margin:0.5rem; color:#999; cursor:pointer; }
 #page1 .pg1_btn_box label:hover { color:#fff; background-color:rgb(189, 112, 112); }
@@ -117,11 +117,3 @@
 .colm_fr .lst2 .item1:before { background-image: url("./images/ico_srch.png"); }
 .colm_fr .lst2 .item2:before { background-image: url("./images/ico_srch.png"); }
 .colm_fr .lst2 .item3:before { background-image: url("./images/ico_srch.png"); }
-/*
-.colm_fr .lst1 .item1:before { background-position:0px -400px; }
-.colm_fr .lst1 .item2:before { background-position:-60px -400px; }
-.colm_fr .lst1 .item3:before { background-position:-120px -400px; }
-.colm_fr .lst2 .item1:before { background-position:-180px -400px; }
-.colm_fr .lst2 .item2:before { background-position:-240px -400px; }
-.colm_fr .lst2 .item3:before { background-position:0px -460px; }
-*/

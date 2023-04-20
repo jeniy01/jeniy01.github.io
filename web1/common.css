@@ -1,11 +1,4 @@
 @charset "UTF-8";
-/* 
-웹 폰트 : 구글 웹폰트 또는 눈누, 응용 프로그램용 폰트 : 다폰트
-font-family:"1차폰트명",2차폰트명,3차폰트명;}
-3차 폰트는 기본 폰트를 적용함
-기본 폰트 : 브라우저에서 기본적으로 제공하는 폰트
-sans-serif(고딕), serif(명조), cursive(궁서), monospace(가로세로비율1:1폰트), fantasy(심볼기호나 디자인폰트)
-*/
 /* 초기화 스타일 */
 * { margin: 0; padding: 0; }
 body, html { width:100%; font-family: 'Noto Sans KR', sans-serif; overflow-x:hidden; }
@@ -27,15 +20,6 @@ img { border: none; }
 .right_tnb { float:right; }
 .right_tnb li { float:left; line-height: 35px; }
 .right_tnb li a { margin-left: 14px; display:block; width:30px; height:30px; text-indent:9999px; overflow:hidden; margin-top:2px; background-size:300px 700px; }
-/* split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시 
-    background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
-*/
-/* 각 각의 아이콘 이미지 적용시
-.right_tnb li a { background-size:auto; background-position:center center; }
-.right_tnb li a.ico1 { background-image: url("./images/icon1.png"); }
-.right_tnb li a.ico2 { background-image: url("./images/icon2.png"); }
-.right_tnb li a.ico3 { background-image: url("./images/icon3.png"); }
-*/
 .right_tnb li a { background-size:auto; background-position:center center; }
 .right_tnb li a.sns1 { background-image: url("./images/ico_sns_youtube_main.png"); }
 .right_tnb li a.sns2 { background-image: url("./images/ico_sns_insta_main.png"); }
