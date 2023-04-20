@@ -1,3 +1,5 @@
+
+
 /*풀페이지*/
 .fullpage { clear:both; position:relative; width:100vw; height:100vh; overflow:hidden; }
 .fullpage > * { display:block; width:100%; }
@@ -6,6 +8,7 @@
 .ban_fr { clear:both; width: 1280px; height: 550px; padding-top: 40px; overflow:hidden; }
 .ban_fr .ban_box { width: 600%; height: 550px; transition-duration:0.6s; }
 .ban_fr .ban_box li { width: 1280px; float:left; height: 550px; }
+
 .ban_fr .ban_box li .pic { display:block; width: 840px; height: 550px; float:left; border-radius: 40px;}
 .ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position:relative; background-color: #f1f1f1; border-radius:40px;}
 .ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size:64px; line-height:3; color:rgb(187, 0, 0); margin-left:50px; }
