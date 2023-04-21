@@ -30,10 +30,39 @@
     </style>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="sub_common.css">
+    <link rel="stylesheet" href="sublayout.css">
     </style>
     <style>
     /* 내부 스타일 */
     .content { background-image: url("./images/img_customer_visual.jpg"); }
+    #page1 .grid3 li { text-align: center; box-sizing:border-box; border:1px solid #eee; height: 300px; }
+    #page1 .grid3 .grid_tit { font-size:28px; font-weight:200; color:#222; padding-top:50px; }
+    #page1 .grid3 .grid_tit:after { content:""; display:block; clear:both; width:80px; height:5px; background-color:rgb(187, 0, 0); margin:30px auto; }
+
+    #page2 { background-color: #fff; color: #333; }
+    #page2 .tit_box { clear:both; padding-top:80px; width:1280px; margin:0 auto; }
+    #page2 .grid4 .grid_tit { font-size:28px; font-weight:200; color:rgb(187, 0, 0); padding-top:50px; }
+    .more { display:block; position:absolute; top:60px; right:200px; font-size:68px; font-weight:bold; width:80px; height:80px; border:1px solid #ccc; text-align:center; color:#999; }
+    .board_fr { clear:both; width:1280px; margin:0px auto; padding-top:40px; }
+    .tb1 { clear:both; display:table; border-collapse:collapse; }
+    .tb1 tr { display:table-row; width:1280px; }
+    .tb1 td { display:table-cell; min-height:50px; padding-top:20px; padding-bottom:20px; border-top:1px solid #ccc; }
+    .tb1 tr:last-child td { border-bottom:1px solid #ccc; }
+    .tb1 td.td1 { vertical-align:top; width: 100px; text-align:left; font-size:32px; color: rgb(187, 0, 0); font-weight:100; }
+    .tb1 td a { display:block; color:#333; transition-duration:0.4s; }
+    .tb1 td a .td_tit { width:1100px; font-size:28px; line-height:1.4; font-weight:200; padding-right:36px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .tb1 td a .td_com { width:1100px; font-size:18px; line-height:2.2; font-weight:100; color:#999; padding-right:36px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .tb1 td a:hover { color:rgb(189, 112, 112); }
+    .tb1 td a:hover .td_com { color:rgb(189, 112, 112); }
+
+    #page3 { background-image: url("./images/img_field9_1.jpg"); background-position:center center; background-size:100% auto; background-attachment: fixed; }
+    #page3 .page_comment { text-shadow:1px 1px 3px #333; color:#fff; }
+
+    #page4 .grid3 li { text-align: center; box-sizing:border-box; border:1px solid #eee; height: 300px; }
+    #page4 .grid3 .grid_tit { font-size:28px; font-weight:200; color:#222; padding-top:50px; }
+    #page4 .grid3 .grid_tit:after { content:""; display:block; clear:both; width:80px; height:5px; background-color:rgb(187, 0, 0); margin:30px auto; }
+    #page4 .grid3 .grid_com { padding-top:15px; font-size:20px; }
+    
     </style>
 </head>
 <body>
@@ -163,23 +192,117 @@
             </figure>
             <section class="page" id="page1">
                 <h2 class="page_tit">고객의소리</h2>
-                <div class="page_wrap"></div>
+                <div class="page_wrap">
+                    <p class="page_comment">
+                        저희 서비스를 이용하시면서 느끼신 불편한 사항이나 칭찬할 만한 내용에 대하여<br>
+                        의견을 남기실 수 있습니다.
+                    </p>
+                </div>
             </section>
             <section class="page" id="page2">
                 <h2 class="page_tit">FAQ</h2>
-                <div class="page_wrap"></div>
+                <div class="page_wrap">
+                    <a href="" class="more">+</a>
+                    <article class="board_fr">
+                        <table class="tb1">
+                            <tbody>
+                                <tr>
+                                    <td class="td1">Q.</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">택배서비스</h3>
+                                            <p class="td_com">택배표준약관에 대해서 알고 싶습니다.</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">Q.</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">온라인택배서비스</h3>
+                                            <p class="td_com">온라인 택배예약 의뢰는 어떻게 합니까?</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">Q.</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">취급불가품목</h3>
+                                            <p class="td_com">택배로 보낼 수 없는 취급불가품목은 어떤것입니까?</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">Q.</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">파손위험</h3>
+                                            <p class="td_com">파손위험물, 산간오지 지역일 경우 기본운임보다 택배운임이 왜 비쌉니까?</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">Q.</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">반품서비스</h3>
+                                            <p class="td_com">배송된 물품의 반품은 어떻게 해야 하나요?</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
             </section>
             <section class="page" id="page3">
                 <h2 class="page_tit">납품대금지급조회</h2>
-                <div class="page_wrap"></div>
+                <div class="page_wrap">
+                    <p class="page_comment">
+                        납품대금 지급방식에 대한 안내입니다.
+                    </p>
+                </div>
             </section>
             <section class="page" id="page4">
                 <h2 class="page_tit">공지사항</h2>
-                <div class="page_wrap"></div>
+                <div class="page_wrap">
+                    <article class="grid3">
+                        <ul class="grid_box">
+                            <li>
+                                <div>
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com">'제로 웨이스트 챌린지<br>
+                                        with 롯데글로벌로지스' 이벤트
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com">(안내) 롯데택배 사칭 문자,<br>
+                                        이메일 주의
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com">(안내) 개인정보처리방침<br>
+                                        변경 안내(시행일자 2022. 12. 12)
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
             </section>
             <section class="page" id="page5">
                 <h2 class="page_tit">사업문의</h2>
-                <div class="page_wrap"></div>
+                <div class="page_wrap">
+                    <p class="page_comment">
+                        저희 서비스에 대한 사업 제휴 및 문의사항을 남기실 수 있습니다.
+                    </p>
+                </div>
             </section>
         </div>
     <footer class="ft">

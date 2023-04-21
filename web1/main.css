@@ -1,8 +1,9 @@
 @charset "UTF-8";
 /* 메인 콘텐츠 스타일 */
-.vs { clear:both; position:relative; width: 100vw; height:calc(100vh - 135px); overflow:hidden; }
+.vs { clear:both; position:relative; width: 100vw; height:100vh; overflow:hidden; }
+.vs video { display:block; width: 100%; }
 /*
-.vs vidio { display: block; width: 100px }
+.vs { clear:both; position:relative; width: 100vw; height:calc(100vh - 135px); overflow:hidden; }
 */
 .page { clear:both; position:relative; width:100vw; height:100vh; }
 .page_wrap { clear:both; width:1400px; margin:0 auto; }
@@ -21,8 +22,8 @@
 .ban_fr { clear:both; width: 1280px; height: 550px; padding-top: 40px; overflow:hidden; }
 .ban_fr .ban_box { width: 600%; height: 550px; transition-duration:0.6s; }
 .ban_fr .ban_box li { width: 1280px; float:left; height: 550px; }
-.ban_fr .ban_box li .pic { display:block; width: 840px; height: 550px; float:left; border-radius: 40px;}
-.ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position:relative; background-color: #f1f1f1; border-radius:40px;}
+.ban_fr .ban_box li .pic { display:block; width: 840px; height: 550px; float:left; border-radius: 40px; }
+.ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position:relative; background-color: #f1f1f1; border-radius:40px; }
 .ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size:64px; line-height:3; color:rgb(187, 0, 0); margin-left:50px; }
 .ban_fr .ban_box li .ban_tit_box .ban_tit2 { position:absolute; left:50px; bottom: 120px; font-size:36px; line-height:2; color: #666; }
 .ban_fr .ban_box li .ban_tit_box .ban_com { position:absolute; bottom:50px; left: 50px;  font-size:16px; color:#666; }
