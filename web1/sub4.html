@@ -60,12 +60,20 @@
     #page3 { background-image: url("./images/img_field9_1.jpg"); background-position:center center; background-size:100% auto; background-attachment: fixed; }
     #page3 .page_comment { text-shadow:1px 1px 3px #333; color:#fff; }
 
+    #page3 .page_wrap { width: 1280px; }
+    #page3 .tit_box { float:left; }
+    .col_fr { clear:both; width: 1280px; padding-top: 40px; }
+    .col_fr .col_box { clear:both; padding-left:135px; width: 1280px; }
+    .col_fr .col_box li.left { float:left; width: 1000px; height: 415px; background-color:#fff; color:rgb(187, 0, 0); border-radius:25px; box-sizing:border-box; padding:38px; }
+    .one_line { font-size:30px; line-height: 2; padding-bottom:18px; }
+    .gtxt { color:#222; font-size:22px; padding-left:28px; }
+
     #page4 .grid3 li { text-align: center; box-sizing:border-box; border:1px solid #999; height: 300px; }
     #page4 .grid3 .grid_tit { font-size:28px; font-weight:200; color:#222; padding-top:50px; }
     #page4 .grid3 .grid_tit:after { content:""; display:block; clear:both; width:80px; height:5px; background-color:rgb(187, 0, 0); margin:30px auto; }
     #page4 .grid3 .grid_com { padding-top:15px; font-size:20px; }
 
-    #page5 { background-image: url("./images/img_company02.jpg"); background-position:center center; background-size:100% auto; background-attachment: fixed; }
+    #page5 { background-color:#e0e0e0; background-position:center center; background-size:100% auto; background-attachment: fixed; }
     #page5 .page_comment { text-shadow:1px 1px 3px #333; color:#fff; }
     
     </style>
@@ -264,14 +272,29 @@
                     <p class="page_comment">
                         납품대금 지급방식에 대한 안내입니다.
                     </p>
-                    <p class="page_comment">
-                        1. 기업전자결제 서비스 : 협력업체 및 대리점 필요에 따라 할인 내지 만기수령하는 제도
-                    </p>
-                    <p class="page_comment">
-                        2. 문의처<br>
-                        - 우리은행 : 역전금융센터 (02-2259-0351)<br>
-                        - 신한은행 : 광교대기업금융센터 (02-2010-2218)
-                    </p>
+                <article class="col_fr">
+                    <ul class="col_box">
+                        <li class="left">
+                            <p class="one_line">
+                                <span class="dot">1. 기업전자결제 서비스 → </span>
+                                <span class="gtxt">협력업체 및 대리점 필요에 따라 할인 내지 만기수령하는 제도</span>
+                            </p>
+                            <p class="one_line">
+                                <span class="dot">2. 문의처<br></span>
+                                <span class="gtxt">
+                                    - 우리은행 : 역전금융센터 (02-2259-0351)<br>
+                                    &nbsp; &nbsp; &nbsp; - 신한은행 : 광교대기업금융센터 (02-2010-2218)
+                                </span>
+                            </p>
+                            <p class="one_line">
+                                <span class="dot">3. 기타 문의사항 → </span>
+                                <span class="gtxt">
+                                    지급관련 및 비밀번호 초기화 문의는 각 지점 담당자에게 문의바랍니다.
+                                </span>
+                            </p>
+                        </li>
+                    </ul>
+                </article>
                 </div>
             </section>
             <section class="page" id="page4">

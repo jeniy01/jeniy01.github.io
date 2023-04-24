@@ -33,11 +33,9 @@ img { border: none; }
 .logo { display: block; width: 200px; height: 45px; overflow: hidden; position: absolute; top:8px; left:0; z-index:10; }
 .logo img { display: block; width: 100%; height: auto; }
 
-/*.gnb { position: relative; margin-top: 10px; }*/
 .gnb { padding-top:10px; }
 .gnb > ul { width:800px; height:48px; margin:0 auto; }
 .gnb > ul > li { float:left; width:25%; text-align:center; line-height:50px; }
-/*.gnb > ul > li:before { content:""; display:block; width:100vw; height: 50px; background-color:rgba(255, 255, 255, 0.6); border-bottom:1px solid #eee; border-top:1px solid #eee; position:absolute; top:70px; left: 0; visibility:hidden; }*/
 .gnb:hover > ul > li:before { visibility: visible; }
 .gnb > ul > li > a { display:block; font-size:1.3em; color:#333; font-weight:bold; }
 .gnb > ul > li:hover > a { border-bottom:2px solid red; color:rgb(187, 0, 0); }
