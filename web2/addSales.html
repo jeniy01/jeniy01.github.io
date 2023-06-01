@@ -1,0 +1,498 @@
+
+
+
+
+
+  
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 문서 정보 등록 -->
+<!-- 검색엔진최적화(Search Engine Optimization) : SEO -->
+<meta name="subject" content="건강챙김몰">
+<meta name="keywords" content="건강, 영양제, 비타민, 약, 약제품">
+<meta name="description" content="저희 건강챙김몰에서는 다양한 연령대 맞춤 영양제 및 비타민을 판매합니다.">
+<meta name="author" content="by. jeniy01">
+
+<!-- 파비콘 설정 -->
+<link rel="shortcut icon" href="./img/favicon.ico">
+
+<!-- https://jeniy01.github.io/web1 -->
+<!-- 오픈그래프 설정 -->
+<meta name="og:site_name" content="건강챙김몰">
+<meta name="og:title" content="건강챙김몰">
+<meta name="og:description" content="저희 건강챙김몰에서는 다양한 연령대 맞춤 영양제 및 비타민을 판매합니다.">
+<meta name="og:url" content="https://www.myshop.com">
+<meta name="og:image" content="/pro02/img/thumbnail.jpg">
+
+<!-- 기본 폰트 및 초기화 로딩 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<!-- 스타일 초기화 -->
+<link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<style>
+/* 마우스 롤 오버시 스타일 */
+.dropdown-toggle::after { transition: transform 0.15s linear;}
+.show.dropdown .dropdown-toggle::after {transform: translateY(3px);}
+.dropdown-menu {margin-top: 0;} /* hover 메뉴때문에 넣음 */
+</style>
+<script>
+/* 마우스 롤 오버시 스크립트 */
+$(document).ready(function(){
+	var $dropdown = $(".navbar-nav .dropdown");
+	var $dropdownToggle = $(".dropdown-toggle");
+	var $dropdownMenu = $(".dropdown-menu");
+	var showClass = "show";
+	$(window).on("load resize", function() {
+		if (this.matchMedia("(min-width: 768px)").matches) {
+			$dropdown.hover(
+				function() {
+					var $this = $(this);
+					$this.addClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "true");
+					$this.find($dropdownMenu).addClass(showClass);
+				},
+				function() {
+					var $this = $(this);
+					$this.removeClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "false");
+					$this.find($dropdownMenu).removeClass(showClass);
+				}
+			);
+		} else {
+			$dropdown.off("mouseenter mouseleave");
+		}
+	});
+});
+</script>
+<title>제품 구매</title>
+<style>
+.container-fluid { width:1280px; }
+</style>
+<script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
+</head>
+<body>
+
+
+
+
+    <header id="hd" class="container">
+        <div class="container-fluid">
+            <nav id="tnb" class="navbar navbar-default">
+                <ul class="nav navbar-nav navbar-right" style="padding-right:40px">
+                    
+                    
+                        <li><a href="myPage.html">마이페이지</a></li>
+                        <li><a href="myBasket.html">장바구니</a></li>
+                        <li><a href="mySalesList.html">구매내역</a></li>
+                        <li><a href="userLogout.html">로그아웃</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default" style="padding-right:30px;">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">MYSHOP</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav" data-toggle="tab-hover" role="tablist">
+                    <li class="active"><a href="/index.html">건강챙김몰<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="cate01.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">기초영양<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0101.html">프로폴리스</a></li>
+                          <li><a href="cate0102.html">코엔자임큐텐</a></li>
+                          <li><a href="cate0103.html">트리플러스맨</a></li>
+                          <li class="divider"></li>
+                          <li><a href="cate0104.html">트윈스징크씨</a></li>
+                          <li><a href="cate0105.html">토탈케어</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate02.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">혈행개선<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0201.html">달맞이꽃종자유</a></li>
+                          <li><a href="cate0202.html">오메가3</a></li>
+                          <li><a href="cate0203.html">울트라트윈</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate03.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">아이건강<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0301.html">키즈프로바이오틱스</a></li>
+                          <li><a href="cate0302.html">키즈아연</a></li>
+                          <li><a href="cate0303.html">키즈락추로스</a></li>
+                          <li><a href="cate0304.html">키즈면역구미</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate04.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">종합비타민<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0401.html">수퍼바이오틱스</a></li>
+                          <li><a href="cate0402.html">트리플러스우먼</a></li>
+                          <li><a href="cate0403.html">밀크씨슬</a></li>
+                          <li><a href="cate0404.html">마그네슘</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate05.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">항산화<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0501.html">트리플러스</a></li>
+                          <li><a href="cate0502.html">트윈세트</a></li>
+                        </ul>
+                      </li>
+                       <li class="dropdown">
+                           <a href="noticeList.html"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">커뮤니티 <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><a href="noticeList.html">공지사항</a></li>
+                              <li><a href="faqList.html">자주하는 질문</a></li>
+                              <li><a href="qnaList.html">묻고 답하기</a></li>
+                              <li class="divider"></li>
+                              <li><a href="reviewList.html">이용후기</a></li>
+                              <li><a href="dataList.html">자료실</a></li>
+                          </ul>
+                       </li>
+                    </ul>
+                  
+                </div>
+              </div>
+            </nav>
+        </div>
+    </header>
+
+<div class="content" style="padding-top:30px; margin-top:30px; border-top:3px solid #333; min-height:500px;">
+	<div class="container-fluid">
+		<h2>제품 구매</h2>
+		<p>제품을 구매합니다.</p>
+		<form action="/pro02/AddPayment.do" method="POST" onsubmit="return payCheck(this)">
+			<h3>구매 제품 정보</h3>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th>상품명</th>
+						<td>밀크씨슬
+							<input type="hidden" id="gname" name="gname" value="밀크씨슬">
+							<input type="hidden" id="cate" name="cate" value="0403">
+							<input type="hidden" id="gcode" name="gcode" value="04030001">
+							<input type="hidden" id="id" name="id" value="lmk">
+							<input type="hidden" id="name" name="name" value="이마크">
+							<input type="hidden" id="email" name="email" value="lmk@nate.com">
+							<input type="hidden" id="utel" name="utel" value="010-1111-1111">
+							<input type="hidden" id="uaddr" name="uaddr" value="경기도 고양시 일산동구">
+							
+								<input type="hidden" id="bnum" name="bnum" value="10002">
+							
+						</td>
+					</tr>
+					<tr>
+						<th>중량</th><td>54g</td>
+					</tr>
+					<tr>
+						<th>상품 설명</th><td>건강기능식품 밀크씨슬 (60일분)</td>
+					</tr>
+					<tr>
+						<th>구매 가격</th><td>40000
+						<input type="hidden" id="price" name="price" value="40000"></td>
+					</tr>
+					<tr>
+						<th><label for="amount">수량</label></th>
+						<td>
+							구매 가능 수량 : <strong>8</strong><br>
+							<input type="number" name="amount" id="amount" value="1" min="0" max="8" title="1~500" class="form-control" required>
+						</td>
+					</tr>
+					<tr>
+						<th>상품 이미지</th>
+						<td><img src='./img/04030001_1.jpg' alt="밀크씨슬"/></td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<h3>배송 정보</h3>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th>배송지 주소</th>
+						<td>
+							<input type="text" name="address1" id="address1" placeholder="기본 주소 입력" class="form-control" required /><br>
+							<input type="text" name="address2" id="address2" placeholder="상세 주소 입력" class="form-control" required /><br>
+							<input type="text" name="postcode" id="postcode" style="width:160px;float:left;margin-right:20px;" placeholder="우편번호" class="form-control" required>
+							<button type="button" id="post_btn" onclick="findAddr()" class="btn btn-primary" style="margin-bottom:36px;">우편번호 검색</button>
+						</td>
+					</tr>
+					<tr>
+						<th>받는 사람 연락처</th>
+						<td>			
+							<input type="tel" name="tel" id="tel" required>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<h3>결제 정보</h3>
+			<div class="btn-group" style="margin-bottom:36px;">
+				<button type="button" id="pay" class="btn btn-primary">결제하기</button>
+			</div>
+			<table class="table">
+				<tbody>
+					<tr>
+						<th>결제 수단</th>
+						<td>
+							<input type="hidden" name="conf" id="ptype">
+							<input type="radio" name="ptype" id="ptype1" value="신용카드" class="paytype" checked><label for="ptype1">신용카드</label> &nbsp;
+							<input type="radio" name="ptype" id="ptype2" value="체크카드" class="paytype"><label for="ptype2">체크카드</label> &nbsp;
+							<input type="radio" name="ptype" id="ptype3" value="계좌이체" class="paytype"><label for="ptype3">계좌이체</label> &nbsp;
+						</td>
+					</tr>
+					<tr>
+						<th><label for="paycom" id="paycomLb">결제사</label></th>
+						<td>			
+							<select name="paycom" id="paycom" class="form-control" required>
+								<option value="">선택안함</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="paycom" id="ptnumLb">결제 번호</label></th>
+						<td>			
+							<input type="text" name="ptnum" id="ptnum" class="form-control" required>
+							<input type="hidden" name="payamount" id="payamount">
+							<input type="hidden" name="payck" id="payck" value="no">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btn-group">
+				<input type="submit" value="상품 구매 완료" class="btn btn-danger">
+				<a href="javascript:history.go(-1)" class="btn btn-primary">뒤로 가기</a>				
+			</div>
+		</form>
+		<script>
+		function findAddr() {
+			new daum.Postcode({
+				oncomplete: function(data) {
+					console.log(data);
+					var roadAddr = data.roadAddress;
+					var jibunAddr = data.jibunAddress;
+					document.getElementById("postcode").value = data.zonecode;
+					if(roadAddr !== '') {
+						document.getElementById("address1").value = roadAddr;				
+					} else if(jibunAddr !== ''){
+						document.getElementById("address1").value = jibunAddr;
+					}
+					document.getElementById("address2").focus();
+				}
+			}).open();
+		}
+		</script>
+		<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+		<script>
+		//결제모듈 연동
+		$(document).ready(function(){
+			var totalPay=0;
+			var proName;
+			$("#pay").click(function(){
+				proName = $("#gname").val();
+				if($("#amount").val()!="") {
+					totalPay = parseInt($("#price").val()) * parseInt($("#amount").val());
+				} else {
+					alert("구매할 수량을 입력하지 않으셨습니다.");
+					$("#amount").focus();
+					return;
+				}
+				alert("결제할 금액 : "+totalPay);
+				//상품명_현재시간
+	 			var d = new Date();
+				var date = d.getFullYear()+''+(d.getMonth()+1)+''+d.getDate()+''+d.getHours()+''+d.getMinutes()+''+d.getSeconds();
+				IMP.init('imp31083748'); // 결제 API를 사용하기 위한 코드 입력!
+				IMP.request_pay({		//결제 요청
+					merchant_uid : $("#gname").val() + '_' + date, //상점 거래 ID
+					name : $("#gname").val(),				// 결제 명
+					amount : totalPay,					// 결제금액
+					buyer_email : $("#email").val(), // 구매자 email
+					buyer_name : $("#name").val(),				// 구매자 이름
+					buyer_tel : $("#utel").val(),		// 구매자 전화번호
+					buyer_addr : $("#uaddr").val(),		// 구매자 주소
+					buyer_postcode : $("#postcode").val()			// 구매자 우편번호
+					
+					//지정 가능한 속성
+					//https://docs.iamport.kr/sdk/javascript-sdk 참조
+					//pg : 결제 프로그램 코드
+					//pay_method : 결제 방법
+					//escrow : 에스크로 결제창 호출 여부
+					//merchant_uid : 상점 거래 ID
+					//name : 주문명
+					//amount : 결제 금액
+					//custom_data : 가맹점 임의 지정 데이터
+					//tax_free : 면세공급가액
+					//currency : 거래 통화
+					//language : 결제창 화면의 언어
+					//buyer_name : 주문자명
+					//buyer_tel : 주문자 연락처
+					//buyer_email : 주문자 이메일
+					//buyer_addr : 주문자 주소
+					//buyer_postcode : 주문자 우편번호
+					//display : 결제 화면 구성 설정
+					//display.card_quota : 50,000원 이상 금액 결제시 할부 개월 수 옵션
+					//digital : 결제 상품이 컨텐츠인지 여부(휴대폰 소액 결제시 필수)
+					//v_bank_due : 가상계좌 입금기한
+					//m_redirect_url : 리다이렉션 방식으로 호출된 결제창에서 결제 후 이동 될 주소
+					//app_scheme : 모바일 앱 결제 중 앱 복귀를 위한 URL
+					//biz_num : 계약된 사업자등록번호 10자리
+					
+				}, function(rsp){
+					if(rsp.success){
+						console.log(rsp);
+						var msg = '결제가 완료 되었습니다.';
+						var r1 = '고유 아이디 : ' +rsp.imp_uid;
+						var r2 = '상점 거래 아이디 : ' +rsp.merchant_uid;
+						var r3 = '결제 금액 : ' +rsp.paid_amount;
+						var r4 = '카드 승인 번호 : '+rsp.apply_num;
+						
+						//반환 가능한 속성
+						//https://docs.iamport.kr/sdk/javascript-sdk 참조
+						//rsp.success : 결제 성공 여부
+						//rsp.error_code : 결제 실패시 에러 코드
+						//rsp.error_msg : 결제 실패시 에러 메시지
+						//rsp.imp_uid : 아임포트 고유 결제번호
+						//rsp.merchant_uid : 가맹점 고유 주문번호
+						//rsp.pay_method : 결제 방법
+						//rsp.paid_amount : 결제 금액
+						//rsp.status : 결제 상태
+						//rsp.name : 주문명
+						//rsp.pg_provider : 일반 결제 승인된 PG사
+						//rsp.emb_pg_provider : 간편 결제 승인된 PG사 
+						//rsp.pg_tid : PG사 거래고유번호
+						//rsp.buyer_name : 주문자 이름
+						//rsp.buyer_email : 주문자 Email
+						//rsp.buyer_tel : 주문자 연락처
+						//rsp.buyer_addr : 주문자 주소
+						//rsp.buyer_postcode : 주문자 우편번호
+						//rsp.custom_data : 가맹점 임의 지정 데이터
+						//rsp.paid_at : 결제승인시각
+						//rsp.receipt_url : PG사에서 발행되는 거래 매출전표 URL
+						//rsp.apply_num : 카드사 승인번호
+						//rsp.vbank_num : 가상계좌 입금계좌번호
+						//rsp.vbank_name : 가상계좌 은행명
+						//rsp.vbank_holder : 가상계좌 예금주
+						//rsp.vbank_date : 가상계좌 입금기한
+						
+						/* 아래 내용은 각주 처리 해제 */
+						//$("#payck").val("yes");
+						//$("#payamount").val(rsp.paid_amount);
+						//$("#paymethod").val(rsp.pay_method);
+						//$("#paycom").val(rsp.pg_provider);
+						//$("#ptnum").val(rsp.apply_num);
+						//alert(msg);
+						//$("#paymentResult").html(r1+"<br>"+r2+"<br>"+r3+"<br>"+r4);
+					} else{
+						//$("#paymentResult").html('결제실패<br>'+'에러내용 : ' +rsp.error_msg);
+					}
+					//테스트용이므로 실패시에도 그냥 통과시킴 그러므로 실제 사용시에는 아래 내용은 각주 처리하든지 지워야함
+					$("#payck").val("yes");
+					$("#payamount").val(totalPay);
+					//$("#ptype").val("카드");
+					//$("#paycom").val("삼성카드");
+					//$("#ptnum").val("123-1234-1234-1278");
+				});
+	 		});
+		});
+		</script>
+		<script>
+		$(document).ready(function(){
+			var card = ["BC카드", "KB국민카드", "삼성카드", "신한카드", "우리카드", "하나카드", "롯데카드", "현대카드", "NH농협카드"];
+			var bank = ["IBK기업은행", "하나은행", "농협은행", "우리은행", "우체국", "새마을금고", "신협", "한국씨티은행", "수협은행", "대구은행", "부산은행", "케이뱅크", "토스뱅크", "카카오뱅크"];
+			$("input[name='ptype']").change(function(){
+				// 신용카드 결제 선택 시.
+				if($("#ptype1:checked").val() == '신용카드'){
+					$("#ptype").val("신용카드");
+					$('#paycomLb').text("신용카드사 또는 종류");
+					$('#ptnumLb').text("신용카드번호");
+					$("#paycom").empty();
+					$("#paycom").append("<option value=''>선택안함</option>");
+					for(var key in card){
+						$("#paycom").append("<option value='"+card[key]+"'>"+card[key]+"</option>");
+					}
+					$('#ptnum').val("");
+				}	
+				// 체크카드 결제 선택 시.
+				else if($("#ptype2:checked").val() == '체크카드'){
+					$("#ptype").val("체크카드");
+					$('#paycomLb').text("체크카드사 또는 종류");
+					$('#ptnumLb').text("체크카드번호");
+					$("#paycom").empty();
+					$("#paycom").append("<option value=''>선택안함</option>");
+					for(var key in card){
+						$("#paycom").append("<option value='"+card[key]+"'>"+card[key]+"</option>");
+					}
+					$('#ptnum').val("");
+				}
+				// 계좌이체 결제 선택 시.
+				else if($("#ptype3:checked").val() == '계좌이체'){
+					$("#ptype").val("계좌이체");
+					$('#paycomLb').html("입금 은행 : 우리은행 <br> 예금주 : 건강챙김몰");
+					$('#ptnumLb').html("계좌 번호 :<br> 289-24-57910");
+					$("#paycom").empty();
+					$("#paycom").append("<option value=''>선택안함</option>");
+					for(var key in bank){
+						$("#paycom").append("<option value='"+bank[key]+"'>"+bank[key]+"</option>");
+					}
+					$('#ptnum').val("");
+				}
+			}).change();
+			
+			/* $("#pay").click(function(){
+				console.log($("#ptype").val());
+				console.log($("#paycom").val());
+				console.log($("#ptnum").val());
+				$("#paymentResult").html($("#ptype").val()+"<br>"+$("#paycom").val()+"<br>"+$("#ptnum").val());
+			}); */
+		});
+		function payCheck(f){
+			var payCk = f.payck.value;
+			if(payCk!="yes"){
+				alert("아직 결제 전 입니다.");
+				return;
+			}
+		}
+		</script>
+		<div id="paymentResult"></div>
+	</div>
+</div>
+
+<footer class="ft" style="min-height:100px; border-top:3px solid #333; margin-top:30px; padding-top:30px;">
+  <div class="container-fluid ft_wrap">
+		<p style="font-weight:bold;">Copyright © 2023 GUNGANG MALL. All Rights Reserved.</p>
+	</div>
+</footer>
+</body>
+</html>

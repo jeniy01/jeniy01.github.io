@@ -1,0 +1,266 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 문서 정보 등록 -->
+<!-- 검색엔진최적화(Search Engine Optimization) : SEO -->
+<meta name="subject" content="건강챙김몰">
+<meta name="keywords" content="건강, 영양제, 비타민, 약, 약제품">
+<meta name="description" content="저희 건강챙김몰에서는 다양한 연령대 맞춤 영양제 및 비타민을 판매합니다.">
+<meta name="author" content="by. jeniy01">
+
+<!-- 파비콘 설정 -->
+<link rel="shortcut icon" href="./img/favicon.ico">
+
+<!-- https://jeniy01.github.io/web1 -->
+<!-- 오픈그래프 설정 -->
+<meta name="og:site_name" content="건강챙김몰">
+<meta name="og:title" content="건강챙김몰">
+<meta name="og:description" content="저희 건강챙김몰에서는 다양한 연령대 맞춤 영양제 및 비타민을 판매합니다.">
+<meta name="og:url" content="https://www.myshop.com">
+<meta name="og:image" content="/pro02/img/thumbnail.jpg">
+
+<!-- 기본 폰트 및 초기화 로딩 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<!-- 스타일 초기화 -->
+<link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<style>
+/* 마우스 롤 오버시 스타일 */
+.dropdown-toggle::after { transition: transform 0.15s linear;}
+.show.dropdown .dropdown-toggle::after {transform: translateY(3px);}
+.dropdown-menu {margin-top: 0;} /* hover 메뉴때문에 넣음 */
+</style>
+<script>
+/* 마우스 롤 오버시 스크립트 */
+$(document).ready(function(){
+	var $dropdown = $(".navbar-nav .dropdown");
+	var $dropdownToggle = $(".dropdown-toggle");
+	var $dropdownMenu = $(".dropdown-menu");
+	var showClass = "show";
+	$(window).on("load resize", function() {
+		if (this.matchMedia("(min-width: 768px)").matches) {
+			$dropdown.hover(
+				function() {
+					var $this = $(this);
+					$this.addClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "true");
+					$this.find($dropdownMenu).addClass(showClass);
+				},
+				function() {
+					var $this = $(this);
+					$this.removeClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "false");
+					$this.find($dropdownMenu).removeClass(showClass);
+				}
+			);
+		} else {
+			$dropdown.off("mouseenter mouseleave");
+		}
+	});
+});
+</script>
+<title>상품 목록</title>
+<style>
+.container-fluid { width:1280px; }
+.thumbnail { height:480px; }
+.comment { width:auto; height:60px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+.thumb_box { width:150px; margin:24px auto; margin-bottom:10px; height:auto; overflow:hidden; padding-top:5px; padding-bottom:5px; border:1px solid #e0e0f0; text-align:center; }
+.thumb_box::after { content:""; display:block; clear:both; }
+.thumb_box img { width:auto; height:140px; }
+</style>
+</head>
+<body>
+
+
+
+
+    <header id="hd" class="container">
+        <div class="container-fluid">
+            <nav id="tnb" class="navbar navbar-default">
+                <ul class="nav navbar-nav navbar-right" style="padding-right:40px">
+                    
+                    
+                        <li><a href="myPage2.html">마이페이지</a></li>
+                        <li><a href="myBasket.html">장바구니</a></li>
+                        <li><a href="mySalesList.html">구매내역</a></li>
+                        <li><a href="userLogout.html">로그아웃</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default" style="padding-right:30px;">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">MYSHOP</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav" data-toggle="tab-hover" role="tablist">
+                    <li class="active"><a href="/index.html">건강챙김몰<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="cate01.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">기초영양<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0101.html">프로폴리스</a></li>
+                          <li><a href="cate0102.html">코엔자임큐텐</a></li>
+                          <li><a href="cate0103.html">트리플러스맨</a></li>
+                          <li class="divider"></li>
+                          <li><a href="cate0104.html">트윈스징크씨</a></li>
+                          <li><a href="cate0105.html">토탈케어</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate02.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">혈행개선<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0201.html">달맞이꽃종자유</a></li>
+                          <li><a href="cate0202.html">오메가3</a></li>
+                          <li><a href="cate0203.html">울트라트윈</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate03.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">아이건강<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0301.html">키즈프로바이오틱스</a></li>
+                          <li><a href="cate0302.html">키즈아연</a></li>
+                          <li><a href="cate0303.html">키즈락추로스</a></li>
+                          <li><a href="cate0304.html">키즈면역구미</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate04.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">종합비타민<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0401.html">수퍼바이오틱스</a></li>
+                          <li><a href="cate0402.html">트리플러스우먼</a></li>
+                          <li><a href="cate0403.html">밀크씨슬</a></li>
+                          <li><a href="cate0404.html">마그네슘</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="cate05.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">항산화<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="cate0501.html">트리플러스</a></li>
+                          <li><a href="cate0502.html">트윈세트</a></li>
+                        </ul>
+                      </li>
+                       <li class="dropdown">
+                           <a href="noticeList.html"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">커뮤니티 <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                              <li><a href="noticeList.html">공지사항</a></li>
+                              <li><a href="faqList.html">자주하는 질문</a></li>
+                              <li><a href="qnaList.html">묻고 답하기</a></li>
+                              <li class="divider"></li>
+                              <li><a href="reviewList.html">이용후기</a></li>
+                              <li><a href="dataList.html">자료실</a></li>
+                          </ul>
+                       </li>
+                    </ul>
+                  
+                </div>
+              </div>
+            </nav>
+        </div>
+    </header>
+
+<div class="content" style="padding-top:30px; margin-top:30px; border-top:3px solid #333; min-height:500px; ">
+	<div class="container-fluid">
+		<h2>상품 > 프로폴리스</h2>
+		<hr>
+		
+		
+		<article class="row">
+			
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail">
+					<div class="thumb_box">
+						<img src='./img/01010001.jpg' alt="프로폴리스"/>
+					</div>
+					<div class="caption">
+						<a href="detail0101.html">
+							<h3><strong>프로폴리스</strong></h3>
+							<p class="comment"><strong>상품 설명</strong> :<br>건강기능식품 프로폴리스 (60일분)</p>
+							<p><strong>수량</strong> :
+								
+								6
+							</p>
+							<p><strong>가격</strong> : ￦35,000</p>
+						</a>
+						<div class="btn-group">
+							
+								<a href="insertBasket.html" class="btn btn-default" role="button">장바구니 담기</a>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="thumbnail">
+					<div class="thumb_box">
+						<img src='./img/01010002.jpg' alt="프로폴리스 스프레이"/>
+					</div>
+					<div class="caption">
+						<a href="detail0102.html">
+							<h3><strong>프로폴리스 스프레이</strong></h3>
+							<p class="comment"><strong>상품 설명</strong> :<br>건강기능식품 프로폴리스 1통</p>
+							<p><strong>수량</strong> :
+								
+								6
+							</p>
+							<p><strong>가격</strong> : ￦16,500</p>
+						</a>
+						<div class="btn-group">
+							
+								<a href="insertBasket.html" class="btn btn-default" role="button">장바구니 담기</a>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</article>
+			
+		
+	</div>
+</div>
+
+<footer class="ft" style="min-height:100px; border-top:3px solid #333; margin-top:30px; padding-top:30px;">
+  <div class="container-fluid ft_wrap">
+		<p style="font-weight:bold;">Copyright © 2023 GUNGANG MALL. All Rights Reserved.</p>
+	</div>
+</footer>
+</body>
+</html>
