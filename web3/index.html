@@ -1,0 +1,308 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 문서 정보 등록 -->
+<!-- 검색엔진최적화(Search Engine Optimization) : SEO -->
+<meta name="subject" content="가평 문화 관광">
+<meta name="keywords" content="가평, 문화, 관광, 여행, 역사, 유적">
+<meta name="description" content="가평 문화 관광 안내 사이트에 오신 것을 환영합니다.">
+<meta name="author" content="by. jeniy01">
+
+<!-- 파비콘 설정 -->
+<link rel="shortcut icon" href="/pro03/img/favicon/favicon.png">
+
+<!-- https://jeniy01.github.io/web3 -->
+<!-- 오픈그래프 설정 -->
+<meta name="og:site_name" content="가평 문화 관광">
+<meta name="og:title" content="가평 문화 관광">
+<meta name="og:description" content="가평 문화 관광 안내 사이트에 오신 것을 환영합니다.">
+<meta name="og:url" content="https://gp.go.kr">
+
+
+<!-- 기본 폰트 및 초기화 로딩 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,700;1,400;1,700&family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<!-- 스타일 초기화 -->
+<link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<style>
+/* 마우스 롤 오버시 스타일 */
+.dropdown-toggle::after { transition: transform 0.15s linear;}
+.show.dropdown .dropdown-toggle::after {transform: translateY(3px);}
+.dropdown-menu {margin-top: 0;} /* hover 메뉴때문에 넣음 */
+</style>
+<script>
+/* 마우스 롤 오버시 스크립트 */
+$(document).ready(function(){
+	var $dropdown = $(".navbar-nav .dropdown");
+	var $dropdownToggle = $(".dropdown-toggle");
+	var $dropdownMenu = $(".dropdown-menu");
+	var showClass = "show";
+	$(window).on("load resize", function() {
+		if (this.matchMedia("(min-width: 768px)").matches) {
+			$dropdown.hover(
+				function() {
+					var $this = $(this);
+					$this.addClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "true");
+					$this.find($dropdownMenu).addClass(showClass);
+				},
+				function() {
+					var $this = $(this);
+					$this.removeClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "false");
+					$this.find($dropdownMenu).removeClass(showClass);
+				}
+			);
+		} else {
+			$dropdown.off("mouseenter mouseleave");
+		}
+	});
+});
+</script>
+<title>가평 문화 관광</title>
+<style>
+.container.is-fluid { width:1280px; }
+.image.is-4by3 { width:280px; }
+</style>
+</head>
+<body>
+
+
+
+
+<style>
+.container.is-fluid { width:1280px; }
+.navbar { padding-top:20px; width:1280px; }
+.navbar-link { padding-left:50px; }
+.logo { width:150px; height:56px; }
+</style>
+<header id="hd" class="container">
+	<div class="container is-fluid">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+		  <div class="navbar-brand">
+		    <a class="logo" href="/pro03/">
+		      <img src="/pro03/img/logo.gif" width="126" height="56">
+		    </a>
+		    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+		      <span aria-hidden="true"></span>
+		      <span aria-hidden="true"></span>
+		      <span aria-hidden="true"></span>
+		    </a>
+		  </div>
+		  <div id="navbarBasicExample" class="navbar-menu">
+		    <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">지역정보</a>
+		        <div class="navbar-dropdown">
+		          <a href="/pro03/localinfo.jsp" class="navbar-item">가평소개</a>
+		          <a href="/pro03/news.jsp" class="navbar-item">가평여행소식</a>
+		          <a href="/pro03/photo.jsp" class="navbar-item">가평관광사진</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">관광명소</a>
+		        <div class="navbar-dropdown">
+		          <a href="/pro03/gpplace.jsp" class="navbar-item">관광지</a>
+		          <a href="/pro03/history.jsp" class="navbar-item">문화유적</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">숙박</a>
+		        <div class="navbar-dropdown">
+		          <a href="/pro03/hotel.jsp" class="navbar-item">관광호텔</a>
+		          <a href="/pro03/guest.jsp" class="navbar-item">일반숙박시설</a>
+		          <a href="/pro03/camp.jsp" class="navbar-item">야영장</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+				<a class="navbar-link">맛집</a>
+		        <div class="navbar-dropdown">
+		          <a href="/pro03/mlist.jsp" class="navbar-item">100대 맛집</a>
+		          <a href="/pro03/rest.jsp" class="navbar-item">일반음식점</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">여행길잡이</a>
+		        <div class="navbar-dropdown">
+		          <a href="QnaList.html" class="navbar-item">Q&A</a>
+		          <a href="ReviewList.html" class="navbar-item">리뷰</a>
+		          <a href="NoticeList.html" class="navbar-item">공지사항</a>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="navbar-end">
+		      <div class="navbar-item">
+		        <div class="buttons">
+		        	
+		          		<a href="User1Terms.html" class="button is-primary">회원가입</a>
+		          		<a href="User1Login.html" class="button is-light">로그인</a>
+		          	
+		          	
+		        </div>
+		      </div>
+		      
+		    </div>
+		</nav>
+		
+	</div>
+</header>
+<div class="content" style="padding-top:30px; margin-top:30px; border-top:2px solid #222; min-height:500px;">
+	<section class="page">
+		<div class="container is-fluid">
+			<div class="box">
+			  <div class="">
+			    <figure class="">
+			      <img src="./img/main/mainbg08.jpg" alt="">
+			    </figure>
+			  </div>
+			  <div class="card-content">
+			    <div class="media">
+			      <div class="media-left">
+			      </div>
+			      <div class="media-content">
+			        <p class="title is-4" style="text-align:center;">가평군이 자랑하는 가평 8경</p>
+			        <p class="title is-1" style="text-align:center;">제8경 유/명/농/계</p>
+			        <!-- <progress class="progress is-small is-primary" max="100">15%</progress> -->
+			      </div>
+			    </div>
+			    <div class="content">
+			    <p class="subtitle is-5" style="padding-top:100px; text-align:center;">
+			      	설악면 가일리에 위치한 해발 864m의 산으로 기암괴석의 계곡에 끊임없이 흐르는 물로 등산객의 애호를 받고 있으며<br>이곳의 계곡은 박쥐소, 용소, 마당소 등 유리알같은 맑은소와 어우러져 장관을 이룬다.
+			      </p>
+			      <br>
+			      <time datetime="2016-1-1"></time>
+			    </div>
+			  </div>
+			</div>
+			<!-- <div class="">
+			  <div class="">
+			    <figure class="">
+			      <img src="./img/mainbg01.jpg" alt="">
+			    </figure>
+			  </div>
+			  <div class="flex-caption">
+			  <h3>가평군이 자랑하는 가평 8경</h3>
+			  <h2>제8경 유/명/농/계</h2>
+			  <hr>
+			  <p>
+			  	설악면 가일리에 위치한 해발 864m의 산으로 기암괴석의 계곡에 끊임없이 흐르는 물로 등산객의 애호를 받고 있으며<br>이곳의 계곡은 박쥐소, 용소, 마당소 등 유리알같은 맑은소와 어우러져 장관을 이룬다.
+			  </p>
+			  </div>
+			</div> -->
+			<div class="tile is-ancestor">
+			  <div class="tile is-vertical is-8">
+			    <div class="tile">
+			      <div class="tile is-parent">
+			        <article class="tile is-child notification is-danger is-light">
+			          <p class="title">자라섬 캠핑장</p>
+			          <p class="subtitle">자라섬은 1943년 우리나라 최초의 발전전용댐인 청평탬이 완공되면서 생긴 섬으로 중도,서도,남도 등 3개의 섬과 2개의 부속섬으로 이루어져 있으며, 해방이후 중국인들이 농사를..</p>
+			          <figure class="image is-4by3">
+			            <img class="is-rounded" src="./img/main/mainsg01.jpg">
+			          </figure>
+			        </article>
+			      </div>
+			      <div class="tile is-parent">
+			        <article class="tile is-child notification is-info is-light">
+			          <p class="title">자라섬재즈페스티벌</p>
+			          <p class="subtitle">자라섬 재즈는 1회부터 현재까지 재즈라는 특별한 장르를 고집하고 있다. 재즈는 스윙, 퓨전, 보사노바, 비밥, 월드뮤직 등 수많은 하위 카테고리로 나뉘어지며, 모든 장르를 수용할 수 있는..</p>
+			          <figure class="image is-4by3">
+			            <img class="is-rounded" src="./img/main/main_jarasum.jpg">
+			          </figure>
+			        </article>
+			      </div>
+			    </div>
+			    <div class="tile is-parent">
+			      <article class="tile is-child notification is-success is-light">
+			        <p class="title">공지사항 ▼</p>
+			        <p class="subtitle"><a href="NoticeList.html">.. 자세히보기</a></p>
+			        <div class="content">
+			          <!-- Content -->
+			        </div>
+			      </article>
+			    </div>
+			  </div>
+			  <div class="tile is-parent">
+			    <article class="tile is-child notification is-primary is-light">
+			      <div class="content">
+			        <p class="title">남송미술관</p>
+			        <p class="subtitle">허수아비가 좋아서 고향에 허수아비 마을을 설립한 서양화가 남궁원은 고향을 그리는 마음에 시골의 대표적 상징물인 허수아비를 화폭에 옮겼다. 1960년대 산을 불태워 밭을 일구어 내던..</p>
+			        <div class="content">
+			          <figure class="image is-4by3">
+			            <img class="is-rounded" src="./img/main/mainsg02.jpg">
+			          </figure>
+			        </div>
+			      </div>
+			    </article>
+			  </div>
+			</div>
+		<!-- <table class="table is-fullwidth">
+		<thead>
+			<tr>
+				<th><a href="https://www.visitkorea.or.kr/"><img src="./img/logo/logo_bottom_01.gif"></a></th>	
+				<th><a href="https://gto.or.kr/main.php"><img src="./img/logo/logo_bottom_02.gif"></a></th>
+				<th><a href="https://blog.naver.com/ecopiagp"><img src="./img/logo/logo_bottom_09.png"></a></th>
+				<th><a href="https://www.musicvillage1939.com/"><img src="./img/logo/logo_bottom_10.png"></a></th>	
+				<th><a href="https://www.jaraisland.or.kr/jara/main/main.php"><img src="./img/logo/logo_bottom_05.gif"></a></th>
+				<th><a href="http://gfood100.com/"><img src="./img/logo/logo_bottom_06.jpg"></a></th>
+				<th><a href="http://www.gpnara.kr/"><img src="./img/logo/logo_bottom_07.jpg"></a></th>
+			</tr>
+		</thead>
+	</table> -->
+		</div>
+	</section>
+</div>
+
+<style>
+/* .content has-text-centered { text-align:center; } */
+</style>
+<footer class="footer" style="min-height:100px; border-top:3px solid #333; margin-top:30px; padding-top:30px;">
+  <div class="content has-text-centered">
+  <table class="table is-fullwidth">
+		<thead>
+			<tr>
+				<th><a href="https://www.visitkorea.or.kr/"><img src="./img/logo/logo_bottom_01.gif"></a></th>	
+				<th><a href="https://gto.or.kr/main.php"><img src="./img/logo/logo_bottom_02.gif"></a></th>
+				<th><a href="https://blog.naver.com/ecopiagp"><img src="./img/logo/logo_bottom_09.png"></a></th>
+				<th><a href="https://www.musicvillage1939.com/"><img src="./img/logo/logo_bottom_10.png"></a></th>	
+				<th><a href="https://www.jaraisland.or.kr/jara/main/main.php"><img src="./img/logo/logo_bottom_05.gif"></a></th>
+				<th><a href="http://gfood100.com/"><img src="./img/logo/logo_bottom_06.jpg"></a></th>
+				<th><a href="http://www.gpnara.kr/"><img src="./img/logo/logo_bottom_07.jpg"></a></th>
+			</tr>
+		</thead>
+	</table>
+	<select name="favo" id="favo" class="favo right" onchange="favo(this)" style="float:right;">
+		<option value="">패밀리 사이트</option>
+		<option value="https://www.gp.go.kr/portal/index.do">가평군청</option>
+		<option value="https://knto.or.kr/index#">한국관광공사</option>
+		<option value="https://gto.or.kr/main.php">경기관광공사</option>
+	</select>
+	<script>
+	function favo(s){
+	var hs = s.value;
+	if(hs!=""){
+	window.open(hs, "팝업");
+		}
+	}    
+	</script>
+    <p style="font-weight:bold;"><img src="./img/logo/logo_footer.gif" alt="가평" style="padding-right:50px;">copyright2010 gapyeong county. all rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
