@@ -1,0 +1,363 @@
+
+
+
+  
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 문서 정보 등록 -->
+<!-- 검색엔진최적화(Search Engine Optimization) : SEO -->
+<meta name="subject" content="가평 문화 관광">
+<meta name="keywords" content="가평, 문화, 관광, 여행, 역사, 유적">
+<meta name="description" content="가평 문화 관광 안내 사이트에 오신 것을 환영합니다.">
+<meta name="author" content="by. jeniy01">
+
+<!-- 파비콘 설정 -->
+<link rel="shortcut icon" href="./img/favicon/favicon.png">
+
+<!-- https://jeniy01.github.io/web3 -->
+<!-- 오픈그래프 설정 -->
+<meta name="og:site_name" content="가평 문화 관광">
+<meta name="og:title" content="가평 문화 관광">
+<meta name="og:description" content="가평 문화 관광 안내 사이트에 오신 것을 환영합니다.">
+<meta name="og:url" content="https://gp.go.kr">
+
+
+<!-- 기본 폰트 및 초기화 로딩 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,700;1,400;1,700&family=Jua&family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+<!-- 스타일 초기화 -->
+<link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<style>
+/* 마우스 롤 오버시 스타일 */
+.dropdown-toggle::after { transition: transform 0.15s linear;}
+.show.dropdown .dropdown-toggle::after {transform: translateY(3px);}
+.dropdown-menu {margin-top: 0;} /* hover 메뉴때문에 넣음 */
+</style>
+<script>
+/* 마우스 롤 오버시 스크립트 */
+$(document).ready(function(){
+	var $dropdown = $(".navbar-nav .dropdown");
+	var $dropdownToggle = $(".dropdown-toggle");
+	var $dropdownMenu = $(".dropdown-menu");
+	var showClass = "show";
+	$(window).on("load resize", function() {
+		if (this.matchMedia("(min-width: 768px)").matches) {
+			$dropdown.hover(
+				function() {
+					var $this = $(this);
+					$this.addClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "true");
+					$this.find($dropdownMenu).addClass(showClass);
+				},
+				function() {
+					var $this = $(this);
+					$this.removeClass(showClass);
+					$this.find($dropdownToggle).attr("aria-expanded", "false");
+					$this.find($dropdownMenu).removeClass(showClass);
+				}
+			);
+		} else {
+			$dropdown.off("mouseenter mouseleave");
+		}
+	});
+});
+</script>
+<title>회원 가입</title>
+<style>
+.container.is-fluid { width:1280px; }
+.agree_fr { width: 900px; white-space:pre-wrap; margin: 10px auto; padding: 24px; border:2px solid #eee; height:600px; overflow-y:auto; }
+.title { padding-top:36px; padding-bottom:20px; }
+</style>
+</head>
+<body>
+
+
+
+
+<style>
+.container.is-fluid { width:1280px; }
+.navbar { padding-top:20px; width:1280px; }
+.navbar-link { padding-left:50px; }
+.logo { width:150px; height:56px; }
+</style>
+<header id="hd" class="container">
+	<div class="container is-fluid">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+		  <div class="navbar-brand">
+		    <a class="logo" href="index.html">
+		      <img src="./img/logo.gif" width="126" height="56">
+		    </a>
+		    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+		      <span aria-hidden="true"></span>
+		      <span aria-hidden="true"></span>
+		      <span aria-hidden="true"></span>
+		    </a>
+		  </div>
+		  <div id="navbarBasicExample" class="navbar-menu">
+		    <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">지역정보</a>
+		        <div class="navbar-dropdown">
+		          <a href="localinfo.html" class="navbar-item">가평소개</a>
+		          <a href="news.html" class="navbar-item">가평여행소식</a>
+		          <a href="photo.html" class="navbar-item">가평관광사진</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">관광명소</a>
+		        <div class="navbar-dropdown">
+		          <a href="gpplace.html" class="navbar-item">관광지</a>
+		          <a href="history.html" class="navbar-item">문화유적</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">숙박</a>
+		        <div class="navbar-dropdown">
+		          <a href="hotel.html" class="navbar-item">관광호텔</a>
+		          <a href="guest.html" class="navbar-item">일반숙박시설</a>
+		          <a href="camp.html" class="navbar-item">야영장</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+				<a class="navbar-link">맛집</a>
+		        <div class="navbar-dropdown">
+		          <a href="mlist.html" class="navbar-item">100대 맛집</a>
+		          <a href="rest.html" class="navbar-item">일반음식점</a>
+		        </div>
+		      </div>
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link">여행길잡이</a>
+		        <div class="navbar-dropdown">
+		          <a href="qnaList.html" class="navbar-item">Q&A</a>
+		          <a href="reviewList.html" class="navbar-item">리뷰</a>
+		          <a href="noticeList.html" class="navbar-item">공지사항</a>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="navbar-end">
+		      <div class="navbar-item">
+		        <div class="buttons">
+		        	
+		          		<a href="user1Terms.html" class="button is-primary">회원가입</a>
+		          		<a href="user1Login.html" class="button is-light">로그인</a>
+		          	
+		          	
+		        </div>
+		      </div>
+		      
+		    </div>
+		</nav>
+		
+	</div>
+</header>
+<div class="content" style="padding-top:30px; margin-top:30px; border-top:3px solid #333; min-height:500px;">
+	<section class="container is-fluid">
+		<h2 class="title">회원가입</h2>
+		<form name="frm1" id="frm1" action="/pro03/User1JoinPro.do" method="post" onsubmit="return joinCheck(this)">
+			<table class="table">			
+				<tbody>
+					<tr>
+						<td>
+						<div class="field">
+							<label class="label">아이디</label>
+							<div class="control">
+								<input class="input" type="text" id="id" name="id" placeholder="영문소문자 및 숫자를 혼용하여 15글자 이내로 아이디 입력" pattern="^[a-z0-9]{8,16}" maxlength="15" style="width:80%;display:inline-block;" autofocus required />
+								<input type="button" class="button is-small is-responsive" value="중복 확인" onclick="idCheck()">
+								<input type="hidden" name="idck" id="idck" value="no">
+							</div>
+							<div>
+								
+								<p id="msg" style="padding-left:0.5rem">아이디 중복 체크를 하지 않으셨습니다.</p>
+								
+								
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="field">
+							<label class="label">비밀번호</label>
+							<div class="control">
+								<input class="input" type="password" id="pw" name="pw" placeholder="비밀번호 입력" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" maxlength="16" required />
+								<p>비밀번호는 최소 8자리에서 최대 16자리까지 숫자, 영문, 특수문자 각 1개 이상 포함되어야 함</p>
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="field">
+							<label class="label">비밀번호 확인</label>
+							<div class="control">
+								<input class="input" type="password" id="pw2" name="pw2" placeholder="비밀번호 확인" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" maxlength="16" required />
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="field">
+							<label class="label">이름</label>
+							<div class="control">
+								<input class="input" type="text" id="name" name="name" placeholder="이름 입력" required />
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="field">
+							<label class="label">이메일</label>
+							<div class="control">
+								<input class="input" type="email" id="eamil" name="email" placeholder="이메일 입력" required />
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="field">
+							<label class="label">연락처</label>
+							<div class="control">
+								<input class="input" type="tel" id="tel" name="tel" maxlength="13" placeholder="전화번호 숫자만 입력" required />
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						<div class="field">
+							<label class="label">연락처</label>
+							<div class="control">
+								<input class="input" type="text" id="address1" name="address1" placeholder="기본 주소 입력" required /><br>
+								<input class="input" type="text" name="address2" id="address2" placeholder="상세 주소 입력" required /><br>
+								<input class="input" type="text" name="postcode" id="postcode" style="width:160px; float:left; margin-right:20px;" placeholder="우편번호">
+								<button id="post_btn" onclick="findAddr()" class="button is-small is-responsive">우편번호 검색</button>
+							</div>
+						</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="submit" value="회원가입" class="button is-primary"/>
+							<input type="reset" value="취소" class="button is-light"/>
+							
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<script>
+		function idCheck(){
+			if($("#id").val()==""){
+				alert("아이디를 입력하시기 바랍니다.");
+				$("#id").focus();
+				return;
+			}
+			var params = { id:$("#id").val() }
+			$.ajax({
+				url:"/pro03/IdCheck.do",
+				type:"post",
+				dataType:"json",
+				data:params,
+				success:function(result){
+					//console.log(result);
+					var idChk = result.result;
+					if(idChk==false){
+						$("#idck").val("no");
+						$("#msg").html("<strong>사용할 수 없는 아이디 입니다.</strong>")
+					} else if(idChk==true){
+						$("#idck").val("yes");
+						$("#id").attr("readonly","true");
+						$("#msg").html("<strong>사용 가능한 아이디 입니다.</strong>");
+						$("#pw").focus();
+					} else {
+						$("#msg").html("<strong>아이디가 확인되지 않았습니다. 다시 시도 바랍니다.</strong>")
+					}
+				}
+			});
+		}
+		function joinCheck(f){
+			if(f.pw.value!=f.pw2.value){
+				alert("비밀번호와 비밀번호 확인이 서로 다릅니다.");
+				f.pw.focus();
+				return false;
+			}
+			if(f.idck.value!="yes"){
+				alert("아이디 중복 체크를 하지 않으셨습니다.");
+				return false;
+			}
+		}
+		function findAddr(){
+			new daum.Postcode({
+				oncomplete: function(data) {
+					console.log(data);
+					var roadAddr = data.roadAddress;
+					var jibunAddr = data.jibunAddress;
+					document.getElementById("postcode").value = data.zonecode;
+					if(roadAddr !== '') {
+						document.getElementById("address1").value = roadAddr;				
+					} else if(jibunAddr !== ''){
+						document.getElementById("address1").value = jibunAddr;
+					}
+					document.getElementById("address2").focus();
+				}
+			}).open();		
+		}
+		</script>
+		<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	</section>	
+</div>
+
+<style>
+/* .content has-text-centered { text-align:center; } */
+</style>
+<footer class="footer" style="min-height:100px; border-top:3px solid #333; margin-top:30px; padding-top:30px;">
+  <div class="content has-text-centered">
+  <table class="table is-fullwidth">
+		<thead>
+			<tr>
+				<th><a href="https://www.visitkorea.or.kr/"><img src="./img/logo/logo_bottom_01.gif"></a></th>	
+				<th><a href="https://gto.or.kr/main.php"><img src="./img/logo/logo_bottom_02.gif"></a></th>
+				<th><a href="https://blog.naver.com/ecopiagp"><img src="./img/logo/logo_bottom_09.png"></a></th>
+				<th><a href="https://www.musicvillage1939.com/"><img src="./img/logo/logo_bottom_10.png"></a></th>	
+				<th><a href="https://www.jaraisland.or.kr/jara/main/main.php"><img src="./img/logo/logo_bottom_05.gif"></a></th>
+				<th><a href="http://gfood100.com/"><img src="./img/logo/logo_bottom_06.jpg"></a></th>
+				<th><a href="http://www.gpnara.kr/"><img src="./img/logo/logo_bottom_07.jpg"></a></th>
+			</tr>
+		</thead>
+	</table>
+	<select name="favo" id="favo" class="favo right" onchange="favo(this)" style="float:right;">
+		<option value="">패밀리 사이트</option>
+		<option value="https://www.gp.go.kr/portal/index.do">가평군청</option>
+		<option value="https://knto.or.kr/index#">한국관광공사</option>
+		<option value="https://gto.or.kr/main.php">경기관광공사</option>
+	</select>
+	<script>
+	function favo(s){
+	var hs = s.value;
+	if(hs!=""){
+	window.open(hs, "팝업");
+		}
+	}    
+	</script>
+    <p style="font-weight:bold;"><img src="./img/logo/logo_footer.gif" alt="가평" style="padding-right:50px;">copyright2010 gapyeong county. all rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
