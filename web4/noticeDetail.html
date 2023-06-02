@@ -1,14 +1,15 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>건강제약</title>
-	<!-- 헤드 부분 인클루드 -->
+	<meta charset="UTF-8">
+	<title>글 상세보기</title>
+    <!-- 헤드 부분 인클루드 -->
     
 
 
@@ -67,9 +68,9 @@ ul { list-style:none; }
 
 </head>
 <body>
-<header id="header">
-	<!-- 헤더 부분 인클루드 -->
- 	
+	<header id="header">
+		<!-- 헤더 부분 인클루드 -->
+	 	
 
 
 
@@ -78,37 +79,39 @@ ul { list-style:none; }
 
 <!-- 헤더 내용 기술 -->
 <nav class="top-bar">
-   <div class="top-bar-left" id="gnb">
-   	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
-     <ul class="dropdown menu" data-dropdown-menu>
-       <li class="menu-text"><a href="index.html" class="logo">건강제약</a></li>
-       <li><a href="#">회사소개</a></li>
-       <li><a href="#">제품소개</a></li>
-       <li><a href="#">연구개발</a></li>
-       <li class="has-submenu">
-			<a href="#">홍보센터</a>
-			<ul class="submenu menu vertical" data-submenu>
-				<li><a href="noticeList.html">공지사항</a></li>
-				<li><a href="#">자료실</a></li>
-				<li><a href="#">질문 및 답변</a></li>
-				<li><a href="#">자유게시판</a></li>
-			</ul>
-    	</li>
-       <!-- <li><a href="#">Human</a></li> -->
-     </ul>
-   </div>
-            
-     <div class="top-bar-right">
-       <ul class="menu">
-        
-          <li><a href="memberLoginForm.html">로그인</a></li>
-          <li><a href="memberAgree.html">회원가입</a></li>
-        
-          
-          
-       </ul>
-     </div>
-  </nav>
+    <div class="top-bar-left" id="gnb">
+         <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li class="menu-text"><a href="index.html" class="logo">건강제약</a></li>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">제품소개</a></li>
+        <li><a href="#">연구개발</a></li>
+        <li class="has-submenu">
+             <a href="#">홍보센터</a>
+             <ul class="submenu menu vertical" data-submenu>
+                 <li><a href="noticeList.html">공지사항</a></li>
+                 <li><a href="#">자료실</a></li>
+                 <li><a href="#">질문 및 답변</a></li>
+                 <li><a href="#">자유게시판</a></li>
+             </ul>
+         </li>
+        <!-- <li><a href="#">Human</a></li> -->
+      </ul>
+    </div>
+             
+      <div class="top-bar-right">
+        <ul class="menu">
+         
+           
+           <li><a href="memberLogout.html">로그아웃</a></li>
+           <li><a href="memberRead.html">회원정보</a></li>
+           
+         
+           <li><a href="memberList.html">회원관리</a></li>
+           
+        </ul>
+      </div>
+   </nav>
     <!-- End Top Bar -->
 	<!-- 
     <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
@@ -136,14 +139,55 @@ ul { list-style:none; }
       </ul>
     </div>
      -->
-</header>
-<div class="content container" id="content" style="min-height:500px;">
-	<h2 class="title" style="text-align:center; padding-top:100px;">Greater Vaule For Your Life</h2>
-	<p style="text-align:center;">끊임없는 연구개발을 통해 고객의 건강한 삶을 위한 더 나은 가치를 만들어갑니다.</p>
-</div>
-<footer id="footer" class="footer-nav row expanded collapse">
-	<!-- 푸터 부분 인클루드 -->
+    </header>
 	
+	<div class="content" id="content">
+	    <div class="row column text-center">
+	      <h2 class="h1">공지사항 글 상세보기</h2>
+	      <hr>
+	      <div class="container">
+				<table class="table">
+					<tbody>
+						<tr>
+							<th>글 번호</th>
+							<td>1</td>
+						</tr>
+						<tr>
+							<th>글 제목</th>
+							<td>제목1</td>
+						</tr>
+						<tr>
+							<th>글 내용</th>
+							<td>첫 번째 공지사항 입니다.</td>
+						</tr>
+						<tr>
+							<th>글 작성자</th>
+							<td>admin</td>
+						</tr>
+						<tr>
+							<th>작성일시</th>
+							<td>2023-05-26 16:24:12.0</td>
+						</tr>
+						<tr>
+							<th>조회수</th>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<a href="noticeList.html" class="button" >글 목록</a>
+								<a href="noticeEdit.html" class="button" >글 수정</a>
+								<a href="noticeDelete.html" class="button" >글 삭제</a>
+								<a href="index.html" class="button" >메인으로</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+ 			</div>
+	    </div>
+	</div>
+    <footer id="footer" class="footer-nav row expanded collapse">
+    	<!-- 푸터 부분 인클루드 -->
+    	
 
 
 
@@ -183,6 +227,6 @@ ul { list-style:none; }
 	  </ul>
 	</div>
 </article>
-</footer>
+    </footer>
 </body>
 </html>

@@ -1,14 +1,15 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>건강제약</title>
-	<!-- 헤드 부분 인클루드 -->
+	<meta charset="UTF-8">
+	<title>공지사항 목록</title>
+    <!-- 헤드 부분 인클루드 -->
     
 
 
@@ -67,9 +68,9 @@ ul { list-style:none; }
 
 </head>
 <body>
-<header id="header">
-	<!-- 헤더 부분 인클루드 -->
- 	
+	<header id="header">
+		<!-- 헤더 부분 인클루드 -->
+	 	
 
 
 
@@ -101,10 +102,12 @@ ul { list-style:none; }
      <div class="top-bar-right">
        <ul class="menu">
         
-          <li><a href="memberLoginForm.html">로그인</a></li>
-          <li><a href="memberAgree.html">회원가입</a></li>
-        
           
+          <li><a href="memberLogout.html">로그아웃</a></li>
+          <li><a href="memberRead.html">회원정보</a></li>
+          
+        
+          <li><a href="memberList.html">회원관리</a></li>
           
        </ul>
      </div>
@@ -136,14 +139,41 @@ ul { list-style:none; }
       </ul>
     </div>
      -->
-</header>
-<div class="content container" id="content" style="min-height:500px;">
-	<h2 class="title" style="text-align:center; padding-top:100px;">Greater Vaule For Your Life</h2>
-	<p style="text-align:center;">끊임없는 연구개발을 통해 고객의 건강한 삶을 위한 더 나은 가치를 만들어갑니다.</p>
-</div>
-<footer id="footer" class="footer-nav row expanded collapse">
-	<!-- 푸터 부분 인클루드 -->
+    </header>
 	
+	<div class="content" id="content">
+	    <div class="row column text-center">
+	      <h2 class="h1">공지사항</h2>
+	      <hr>
+	      <div class="container">
+				<table class="table">
+					<thead>
+						<tr>
+							<th width="100">연번</th>
+      						<th width="200">제목</th>
+      						<th width="200">작성자</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr><td>1</td>
+						<td><a href="noticeDetail.html">제목1</a></td>
+						<td>admin</td></tr>
+						
+						<tr>
+							<td colspan="3">
+								<a href="javascript:history.go(-1)" class="button" >뒤로 가기</a>
+								<a href="noticeInsert.html" class="button" >글 등록</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>		 
+			</div>
+	    </div>
+	</div>
+    <footer id="footer" class="footer-nav row expanded collapse">
+    	<!-- 푸터 부분 인클루드 -->
+    	
 
 
 
@@ -183,6 +213,6 @@ ul { list-style:none; }
 	  </ul>
 	</div>
 </article>
-</footer>
+    </footer>
 </body>
 </html>
